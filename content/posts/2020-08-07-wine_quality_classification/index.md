@@ -6,6 +6,8 @@ excerpt: Predicting Wine Quality using Logistic Regression
 hero: ./evgeniy-konev-3OrRheb618Y-unsplash.jpg
 ---
 
+Photo by [EVGENIY KONEV]("https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash]("https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
+
 ### Data Set
 
 This Data set contains the information related to red wine , Various factors affecting the quality. This data set was prepossessed and downloaded from the UCI Machine Learning Repository. This data set was simple, cleaned, practice data set for classification modelling. Source of this Dataset: https://archive.ics.uci.edu/ml/datasets/wine+quality
@@ -13,21 +15,21 @@ This Data set contains the information related to red wine , Various factors aff
 Attribute Information:  
 Input variables (based on physicochemical tests):
 
-1. - fixed acidity
-2. - volatile acidity
-3. - citric acid
-4. - residual sugar
-5. - chlorides
-6. - free sulfur dioxide
-7. - total sulfur dioxide
-8. - density
-9. - pH
-10. - sulphates
-11. - alcohol  
-      Output variable (based on sensory data):
-12. - quality ('good' and 'bad' based on score >5 and <5)
+1. fixed acidity
+2. volatile acidity
+3. citric acid
+4. residual sugar
+5. chlorides
+6. free sulfur dioxide
+7. total sulfur dioxide
+8. density
+9. pH
+10. sulphates
+11. alcohol  
+    Output variable (based on sensory data):
+12. quality ('good' and 'bad' based on score >5 and <5)
 
-### Analysis Summary
+### Analysis Approach & Conclusions
 
 This analysis focuses on finding attributes that significantly affect wine quality classification and training a predictive model to classify wine quality into `good` and `bad` based on attributes. Analysis is pivoted on the variable `quality`(target variable). Exploratory data analysis steps like removing null values, observing summary statistics, visualizing the variables, removing oultiers, checking for correlations are carried out.
 
@@ -74,6 +76,8 @@ ROC, Precision-Recall / Sensitivity - Specificity curves have been plotted. The 
 - Negative Predictive Value 0.748
 - Likelihood Ratio : Sensitivity / 1-Specificity : 2.554
 - F1-score : 0.77
+
+## Analysis
 
 ```python
 import pandas as pd, numpy as np
