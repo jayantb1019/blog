@@ -1,5 +1,5 @@
 ---
-title: Wine Quality Prediction
+title: Wine Quality Classification
 author: Jayanth Boddu
 date: 2020-08-07
 excerpt: Predicting Wine Quality using Logistic Regression
