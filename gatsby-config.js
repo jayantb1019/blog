@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Yugen`,
     name: `Yugen`,
-    siteUrl: `https://jayantb1019.github.io/yugen/'`,
+    siteUrl: `https://jayantb1019.github.io/`,
     description: `Jayanth's blog on analytics`,
     hero: {
       heading: `Analytics Blog`,
@@ -27,13 +27,14 @@ module.exports = {
       },
     ],
   },
+  assetPrefix: "/blog",
   plugins: [
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
-        basePath: "/",
+        basePath: "/blog",
         authorsPage: true,
         sources: {
           local: true,
