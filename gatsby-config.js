@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Yugen`,
     name: `Yugen`,
-    siteUrl: `https://jayantb1019.github.io/`,
+    siteUrl: `https://analytics-blog-d3223.web.app`,
     description: `Jayanth's blog on analytics`,
     hero: {
       heading: `Analytics Blog`,
@@ -27,14 +27,14 @@ module.exports = {
       },
     ],
   },
-  assetPrefix: "/blog",
+  assetPrefix: "/",
   plugins: [
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
-        basePath: "/blog",
+        basePath: "/",
         authorsPage: true,
         sources: {
           local: true,
@@ -62,6 +62,21 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyCyPIhmGxHzbe-xTDei6JfXhpWrfsr92X4",
+          authDomain: "analytics-blog-d3223.firebaseapp.com",
+          databaseURL: "https://analytics-blog-d3223.firebaseio.com",
+          projectId: "analytics-blog-d3223",
+          storageBucket: "analytics-blog-d3223.appspot.com",
+          messagingSenderId: "828646494157",
+          appId: "1:828646494157:web:518a9347f032e02979be84",
+          measurementId: "G-C0BEP3XC72",
+        },
       },
     },
   ],
