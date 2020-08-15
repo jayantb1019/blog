@@ -6,7 +6,7 @@ excerpt: Predicting Wine Quality using Logistic Regression
 hero: ./evgeniy-konev-3OrRheb618Y-unsplash.jpg
 ---
 
-Photo by [EVGENIY KONEV]("https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash]("https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
+Photo by <a href="https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">EVGENIY KONEV</a> on <a href="https://unsplash.com/@ekonev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
 
 ### Data Set
 
