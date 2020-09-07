@@ -41,11 +41,12 @@ The final relationship between log Odds of Conversion Probability and lead featu
 
 where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
-Interpreting Top 5 features affecting Conversion Probability :
+Interpreting Top 6 features affecting Conversion Probability :
 
 - A lead from `Welingak Website` has 5.41 times higher odds of conversion than those from `Google`.
 - Leads through `Reference` have 3.1 times higher odds of conversion than those from `Google`.
 - Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
+- Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
 - Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
 - Leads with `Unknown Occupation` have 1.2691 times lesser odds of conversion compared to those from `Businessman`.
 
@@ -4038,8 +4039,6 @@ categoricalUAn(feature,figsize=[8,8])
     +---------------------------+-----------------+
 
 ![svg](output_120_1.svg)
-
-TODO : RE-WRITE THIS
 
 - Most leads open emails sent to them (38%) and that's their last activity.
 - Among those leads who's last activity is opening emails, 37% are converted.
@@ -8671,11 +8670,12 @@ The final relationship between log Odds of Conversion Probability and lead featu
 
 where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
-**Interpreting Top 5 features affecting Conversion Probability**
+**Interpreting Top 6 features affecting Conversion Probability**
 
 - A lead from `Welingak Website` has 5.41 times higher odds of conversion than those from `Google`.
 - Leads through `Reference` have 3.1 times higher odds of conversion than those from `Google`.
 - Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
+- Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
 - Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
 - Leads with `Unknown Occupation` have 1.2691 times lesser odds of conversion compared to those from `Businessman`.
 

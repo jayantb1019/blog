@@ -7,7 +7,7 @@ module.exports = {
     description: `Jayanth's blog on analytics`,
     hero: {
       heading: `Analytics Blog`,
-      maxWidth: 750,
+      maxWidth: 850,
     },
     social: [
       {
