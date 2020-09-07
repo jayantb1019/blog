@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "blog",
+  pathPrefix: "/",
   siteMetadata: {
     title: `Yugen`,
     name: `Yugen`,
@@ -48,7 +48,7 @@ module.exports = {
       options: {
         name: `Yugen by Jayanth Boddu`,
         short_name: `Yugen`,
-        start_url: `/`,
+        start_url: ``,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
