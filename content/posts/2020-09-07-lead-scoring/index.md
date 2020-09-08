@@ -29,7 +29,7 @@ X Education has appointed us to help them select the most promising leads, i.e. 
 
 ## Analysis Approach & Conclusions
 
-Lead scoring is a class probability estimation problem, a form of classification problem. The target variable in the data set has two classes : 0 - Un converted and 1 - Converted. The objective is to model the probability(p) that each lead belongs to the class - `Converetd`. Since there are just two classes - it follows that the probability of belonging to class - Un-Converted is (1-p). The relationship between probability of conversion of each lead and its characteristics is modelled using Logistic Regression. And the leads are scored on a scale of 0-100, 100 being most probable conversion candidate.
+Lead scoring is a class probability estimation problem, a form of classification problem. The target variable in the data set has two classes : 0 - Un converted and 1 - Converted. The objective is to model the probability(p) that each lead belongs to the class - `Converted`. Since there are just two classes - it follows that the probability of belonging to class - Un-Converted is (1-p). The relationship between probability of conversion of each lead and its characteristics is modelled using Logistic Regression. And the leads are scored on a scale of 0-100, 100 being most probable conversion candidate.
 
 The final solution has been provided in two parts. 1. Scoring the leads provided by the company in the order of probability of conversion (0-100) 2. Insights into the relationship between characteristics of a lead and the log-odds probability of conversion that could help the company score leads in the future.
 
@@ -37,18 +37,18 @@ A logistic regression model is created using lead features. To arrive at the lis
 
 The final relationship between log Odds of Conversion Probability and lead features is
 
-`logOdds(Conversion Probability)` = -0.6821 - 1.5442 _ `Do Not Email` -1.2691 _ `Unknown Occupation` -0.8891 _ `No Specialization` -0.8856 _ `Hospitality Management` - 0.6636 _ `Outside India` + 1.7926 _ `SMS Sent` + 1.1818 _ `Other Last Activity` + 2.3799 _ `Working Professional` - 0.8591 _ `Olark Chat Conversation` + 5.4168 _ `Welingak Website` + 3.0622 _ `Reference` + 0.6577 _ `Other Lead Sources` + 1.2170 _ `Olark Chat` -0.9929 _ `Landing Page Submission` + 1.1330 _ `Total Time Spent on Website` + 0.6052 _ `Email Opened`
+`logOdds(Conversion Probability)` = -0.6469 - 1.5426 _ `Do Not Email` -1.2699 _ `Unknown Occupation` -0.9057 _ `No Specialization` -0.8704 _ `Hospitality Management` - 0.6584 _ `Outside India` + 1.7923 _ `SMS Sent` + 1.1749 _ `Other Last Activity` + 2.3769 _ `Working Professional` - 0.8614 _ `Olark Chat Conversation` + 5.3886 _ `Welingak Website` + 3.0246 _ `Reference` + 1.1876 _ `Olark Chat` -1.0250 _ `Landing Page Submission` + 1.1253 _ `Total Time Spent on Website` + 0.6106 \* `Email Opened`
 
 where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
 Interpreting Top 6 features affecting Conversion Probability :
 
-- A lead from `Welingak Website` has 5.41 times higher odds of conversion than those from `Google`.
-- Leads through `Reference` have 3.1 times higher odds of conversion than those from `Google`.
+- A lead from `Welingak Website` has 5.4 times higher odds of conversion than those from `Google`.
+- Leads through `Reference` have 3 times higher odds of conversion than those from `Google`.
 - Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
 - Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
 - Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
-- Leads with `Unknown Occupation` have 1.2691 times lesser odds of conversion compared to those from `Businessman`.
+- Leads with `Unknown Occupation` have 1.27 times lesser odds of conversion compared to those from `Businessman`.
 
 Lead Scores :
 
@@ -81,11 +81,11 @@ KS statistic :
 
 Gain :
 
-- Inside of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
+- Instead of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
 
 Lift :
 
-- The model outperforms a random model by alteast 2 times compared to a random model in the top 40% potentially convertible leads.
+- The model outperforms a random model by alteast 2 times in identifying the top 40% potentially convertible leads.
 - As opposed to 10% conversions from 10% leads pursued randomly, pursuing the top 10% leads scored by this model would lead to 24% conversions.
 
 Note :
@@ -6668,7 +6668,7 @@ logm_final = sm.GLM(y_train, sm.add_constant(X_train), family=sm.families.Binomi
 logm_final = logm_final.fit()
 print("VIF for X_train")
 vif(X_train)
-logm1.summary()
+logm_final.summary()
 ```
 
     VIF for X_train
@@ -6699,22 +6699,22 @@ logm1.summary()
   <th>Dep. Variable:</th>       <td>Converted</td>    <th>  No. Observations:  </th>  <td>  6309</td> 
 </tr>
 <tr>
-  <th>Model:</th>                  <td>GLM</td>       <th>  Df Residuals:      </th>  <td>  6292</td> 
+  <th>Model:</th>                  <td>GLM</td>       <th>  Df Residuals:      </th>  <td>  6293</td> 
 </tr>
 <tr>
-  <th>Model Family:</th>        <td>Binomial</td>     <th>  Df Model:          </th>  <td>    16</td> 
+  <th>Model Family:</th>        <td>Binomial</td>     <th>  Df Model:          </th>  <td>    15</td> 
 </tr>
 <tr>
   <th>Link Function:</th>         <td>logit</td>      <th>  Scale:             </th> <td>  1.0000</td>
 </tr>
 <tr>
-  <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2531.3</td>
+  <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2532.8</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5062.7</td>
+  <th>Date:</th>            <td>Mon, 07 Sep 2020</td> <th>  Deviance:          </th> <td>  5065.5</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:47</td>     <th>  Pearson chi2:      </th> <td>6.40e+03</td>
+  <th>Time:</th>                <td>22:02:08</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6728,55 +6728,52 @@ logm1.summary()
                <td></td>                  <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>const</th>                       <td>   -0.6821</td> <td>    0.151</td> <td>   -4.531</td> <td> 0.000</td> <td>   -0.977</td> <td>   -0.387</td>
+  <th>const</th>                       <td>   -0.6469</td> <td>    0.149</td> <td>   -4.338</td> <td> 0.000</td> <td>   -0.939</td> <td>   -0.355</td>
 </tr>
 <tr>
-  <th>Do Not Email</th>                <td>   -1.5442</td> <td>    0.188</td> <td>   -8.229</td> <td> 0.000</td> <td>   -1.912</td> <td>   -1.176</td>
+  <th>Do Not Email</th>                <td>   -1.5426</td> <td>    0.188</td> <td>   -8.222</td> <td> 0.000</td> <td>   -1.910</td> <td>   -1.175</td>
 </tr>
 <tr>
-  <th>Unknown Occupation</th>          <td>   -1.2691</td> <td>    0.090</td> <td>  -14.078</td> <td> 0.000</td> <td>   -1.446</td> <td>   -1.092</td>
+  <th>Unknown Occupation</th>          <td>   -1.2699</td> <td>    0.090</td> <td>  -14.094</td> <td> 0.000</td> <td>   -1.446</td> <td>   -1.093</td>
 </tr>
 <tr>
-  <th>No Specialization</th>           <td>   -0.8891</td> <td>    0.124</td> <td>   -7.144</td> <td> 0.000</td> <td>   -1.133</td> <td>   -0.645</td>
+  <th>No Specialization</th>           <td>   -0.9057</td> <td>    0.124</td> <td>   -7.281</td> <td> 0.000</td> <td>   -1.150</td> <td>   -0.662</td>
 </tr>
 <tr>
-  <th>Hospitality Management</th>      <td>   -0.8856</td> <td>    0.332</td> <td>   -2.667</td> <td> 0.008</td> <td>   -1.536</td> <td>   -0.235</td>
+  <th>Hospitality Management</th>      <td>   -0.8704</td> <td>    0.332</td> <td>   -2.621</td> <td> 0.009</td> <td>   -1.521</td> <td>   -0.220</td>
 </tr>
 <tr>
-  <th>Outside India</th>               <td>   -0.6636</td> <td>    0.233</td> <td>   -2.845</td> <td> 0.004</td> <td>   -1.121</td> <td>   -0.206</td>
+  <th>Outside India</th>               <td>   -0.6584</td> <td>    0.233</td> <td>   -2.823</td> <td> 0.005</td> <td>   -1.116</td> <td>   -0.201</td>
 </tr>
 <tr>
-  <th>SMS Sent</th>                    <td>    1.7926</td> <td>    0.113</td> <td>   15.916</td> <td> 0.000</td> <td>    1.572</td> <td>    2.013</td>
+  <th>SMS Sent</th>                    <td>    1.7923</td> <td>    0.113</td> <td>   15.927</td> <td> 0.000</td> <td>    1.572</td> <td>    2.013</td>
 </tr>
 <tr>
-  <th>Other Last Activity</th>         <td>    1.1818</td> <td>    0.254</td> <td>    4.646</td> <td> 0.000</td> <td>    0.683</td> <td>    1.680</td>
+  <th>Other Last Activity</th>         <td>    1.1749</td> <td>    0.254</td> <td>    4.622</td> <td> 0.000</td> <td>    0.677</td> <td>    1.673</td>
 </tr>
 <tr>
-  <th>Working Professional</th>        <td>    2.3799</td> <td>    0.189</td> <td>   12.584</td> <td> 0.000</td> <td>    2.009</td> <td>    2.751</td>
+  <th>Working Professional</th>        <td>    2.3769</td> <td>    0.189</td> <td>   12.576</td> <td> 0.000</td> <td>    2.006</td> <td>    2.747</td>
 </tr>
 <tr>
-  <th>Olark Chat Conversation</th>     <td>   -0.8591</td> <td>    0.192</td> <td>   -4.474</td> <td> 0.000</td> <td>   -1.236</td> <td>   -0.483</td>
+  <th>Olark Chat Conversation</th>     <td>   -0.8614</td> <td>    0.192</td> <td>   -4.488</td> <td> 0.000</td> <td>   -1.238</td> <td>   -0.485</td>
 </tr>
 <tr>
-  <th>Welingak Website</th>            <td>    5.4168</td> <td>    0.736</td> <td>    7.360</td> <td> 0.000</td> <td>    3.974</td> <td>    6.859</td>
+  <th>Welingak Website</th>            <td>    5.3886</td> <td>    0.736</td> <td>    7.323</td> <td> 0.000</td> <td>    3.946</td> <td>    6.831</td>
 </tr>
 <tr>
-  <th>Reference</th>                   <td>    3.0622</td> <td>    0.247</td> <td>   12.402</td> <td> 0.000</td> <td>    2.578</td> <td>    3.546</td>
+  <th>Reference</th>                   <td>    3.0246</td> <td>    0.246</td> <td>   12.302</td> <td> 0.000</td> <td>    2.543</td> <td>    3.506</td>
 </tr>
 <tr>
-  <th>Other Lead Sources</th>          <td>    0.6577</td> <td>    0.377</td> <td>    1.744</td> <td> 0.081</td> <td>   -0.081</td> <td>    1.397</td>
+  <th>Olark Chat</th>                  <td>    1.1876</td> <td>    0.125</td> <td>    9.530</td> <td> 0.000</td> <td>    0.943</td> <td>    1.432</td>
 </tr>
 <tr>
-  <th>Olark Chat</th>                  <td>    1.2170</td> <td>    0.126</td> <td>    9.662</td> <td> 0.000</td> <td>    0.970</td> <td>    1.464</td>
+  <th>Landing Page Submission</th>     <td>   -1.0250</td> <td>    0.128</td> <td>   -8.018</td> <td> 0.000</td> <td>   -1.276</td> <td>   -0.774</td>
 </tr>
 <tr>
-  <th>Landing Page Submission</th>     <td>   -0.9929</td> <td>    0.129</td> <td>   -7.702</td> <td> 0.000</td> <td>   -1.246</td> <td>   -0.740</td>
+  <th>Total Time Spent on Website</th> <td>    1.1253</td> <td>    0.041</td> <td>   27.204</td> <td> 0.000</td> <td>    1.044</td> <td>    1.206</td>
 </tr>
 <tr>
-  <th>Total Time Spent on Website</th> <td>    1.1330</td> <td>    0.042</td> <td>   27.181</td> <td> 0.000</td> <td>    1.051</td> <td>    1.215</td>
-</tr>
-<tr>
-  <th>Email Opened</th>                <td>    0.6052</td> <td>    0.110</td> <td>    5.490</td> <td> 0.000</td> <td>    0.389</td> <td>    0.821</td>
+  <th>Email Opened</th>                <td>    0.6106</td> <td>    0.110</td> <td>    5.545</td> <td> 0.000</td> <td>    0.395</td> <td>    0.826</td>
 </tr>
 </table>
 
@@ -8433,7 +8430,7 @@ plt.legend(('Our Model','Random Model'));
 
 ![svg](output_299_0.svg)
 
-- Inside of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
+- Instead of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
 
 ## Lift Chart
 
@@ -8657,7 +8654,7 @@ plt.legend(('Our Model','Random Model'));
 
 ![svg](output_303_0.svg)
 
-- The model outperforms a random model by alteast 2 times compared to a random model in the top 40% potentially convertible leads.
+- The model outperforms a random model by alteast 2 times in identifying the top 40% potentially convertible leads.
 - As opposed to 10% conversions from 10% leads pursued randomly, pursuing the top 10% leads scored by this model would lead to 24% conversions.
 
 ## Conclusion
@@ -8666,26 +8663,26 @@ A logistic regression model is created using lead features. To arrive at the lis
 
 The final relationship between log Odds of Conversion Probability and lead features is
 
-`logOdds(Conversion Probability)` = -0.6821 - 1.5442 _ `Do Not Email` -1.2691 _ `Unknown Occupation` -0.8891 _ `No Specialization` -0.8856 _ `Hospitality Management` - 0.6636 _ `Outside India` + 1.7926 _ `SMS Sent` + 1.1818 _ `Other Last Activity` + 2.3799 _ `Working Professional` - 0.8591 _ `Olark Chat Conversation` + 5.4168 _ `Welingak Website` + 3.0622 _ `Reference` + 0.6577 _ `Other Lead Sources` + 1.2170 _ `Olark Chat` -0.9929 _ `Landing Page Submission` + 1.1330 _ `Total Time Spent on Website` + 0.6052 _ `Email Opened`
+`logOdds(Conversion Probability)` = -0.6469 - 1.5426 _ `Do Not Email` -1.2699 _ `Unknown Occupation` -0.9057 _ `No Specialization` -0.8704 _ `Hospitality Management` - 0.6584 _ `Outside India` + 1.7923 _ `SMS Sent` + 1.1749 _ `Other Last Activity` + 2.3769 _ `Working Professional` - 0.8614 _ `Olark Chat Conversation` + 5.3886 _ `Welingak Website` + 3.0246 _ `Reference` + 1.1876 _ `Olark Chat` -1.0250 _ `Landing Page Submission` + 1.1253 _ `Total Time Spent on Website` + 0.6106 \* `Email Opened`
 
 where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
-**Interpreting Top 6 features affecting Conversion Probability**
+Interpreting Top 6 features affecting Conversion Probability :
 
-- A lead from `Welingak Website` has 5.41 times higher odds of conversion than those from `Google`.
-- Leads through `Reference` have 3.1 times higher odds of conversion than those from `Google`.
+- A lead from `Welingak Website` has 5.4 times higher odds of conversion than those from `Google`.
+- Leads through `Reference` have 3 times higher odds of conversion than those from `Google`.
 - Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
 - Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
 - Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
-- Leads with `Unknown Occupation` have 1.2691 times lesser odds of conversion compared to those from `Businessman`.
+- Leads with `Unknown Occupation` have 1.27 times lesser odds of conversion compared to those from `Businessman`.
 
-**Lead Scores**
+Lead Scores :
 
 - Score sheet can be generated by running [this](#Score-Sheet-for-X-Education) cell.
 
 At an optimum cut-off probability of 0.36, model performance is as follows.
 
-**Model Performance on Training Set**
+Model Performance on Training Set :
 
 - Accuracy : 81.7%
 - Sensitivity / Recall: 80.393 %
@@ -8694,7 +8691,7 @@ At an optimum cut-off probability of 0.36, model performance is as follows.
 - False Positive Rate : 18.228 %
 - AUC Score : 0.81
 
-**Model Performance for Test Set**
+Model Performance for Test Set :
 
 - Accuracy : 79.593 %
 - Sensitivity / Recall : 77.605 %
@@ -8703,16 +8700,30 @@ At an optimum cut-off probability of 0.36, model performance is as follows.
 - False Positive Rate : 19.19 %
 - AUC Score : 0.79
 
-**KS statistic**
+KS statistic :
 
 - Max KS Statistic is 59.76 for 5th decile
 - This model discriminates between Converted and Non-converted leads well since KS Statistic in 4th decile (58.11) is greater than 40%. Hence, this is a reasonably good model.
 
-**Gain**
+Gain :
 
 - Inside of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
 
-**Lift**
+Lift :
 
-- The model outperforms a random model by alteast 2 times compared to a random model in the top 40% potentially convertible leads.
+- The model outperforms a random model by alteast 2 times in identifying the top 40% potentially convertible leads.
 - As opposed to 10% conversions from 10% leads pursued randomly, pursuing the top 10% leads scored by this model would lead to 24% conversions.
+
+Note :
+
+- Incorrect data types have been corrected
+- Columns with high missing values have been dropped.
+- Columns which do not explain variability in the model have been dropped.
+- Columns with sales teams notes like `Tags` where the classes are not mutually exclusive have been dropped.
+- Features with low missing values have been imputed with the most frequent values.
+- Categories in a feature with less than 1% contribution have been grouped together to reduce the number of levels.
+- Inconsistencies in Categories have been corrected.
+- 97.5 % of the leads provided by the company have been used for analysis.
+- Class imbalance = 0.6
+- Indicator variables have been created for all categorical variables with the first category as the reference.
+- Continuous variables have been standardized $\mu : 0 , \sigma = 1$ before modelling.
