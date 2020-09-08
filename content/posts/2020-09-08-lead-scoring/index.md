@@ -121,8 +121,8 @@ import sidetable
 !jt -t grade3 -f roboto -fs 12 -cellw 100%
 ```
 
-    Requirement already satisfied: tabulate in /opt/anaconda3/lib/python3.7/site-packages (0.8.7)
-    /bin/sh: jt: command not found
+    Requirement already satisfied: tabulate in /Users/jayanth/opt/anaconda3/lib/python3.7/site-packages (0.8.7)
+    libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: Couldn't close file
 
 ```python
 # to table print  a dataframe
@@ -340,77 +340,76 @@ nulls.columns = ['Null Percentage']
 nulls[nulls['Null Percentage'] !=0].sort_values(by ='Null Percentage', ascending=False).style.applymap(lambda x : 'color : red' if x > 45 else '')
 ```
 
-<table id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead>
-<tbody>
-<tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row0" class="row_heading level0 row0" >Lead Quality</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row0_col0" class="data row0 col0" >51.590909</td>
-            </tr>
+<table id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead><tbody>
             <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Asymmetrique Profile Score</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row1_col0" class="data row1 col0" >45.649351</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row2" class="row_heading level0 row2" >Asymmetrique Activity Score</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row2_col0" class="data row2 col0" >45.649351</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Asymmetrique Profile Index</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row3_col0" class="data row3 col0" >45.649351</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Asymmetrique Activity Index</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row4_col0" class="data row4 col0" >45.649351</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row5" class="row_heading level0 row5" >Tags</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row5_col0" class="data row5 col0" >36.287879</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row6" class="row_heading level0 row6" >Lead Profile</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row6_col0" class="data row6 col0" >29.318182</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row7" class="row_heading level0 row7" >What matters most to you in choosing a course</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row7_col0" class="data row7 col0" >29.318182</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row8" class="row_heading level0 row8" >What is your current occupation</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row8_col0" class="data row8 col0" >29.112554</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row9" class="row_heading level0 row9" >Country</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row9_col0" class="data row9 col0" >26.634199</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row10" class="row_heading level0 row10" >How did you hear about X Education</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row10_col0" class="data row10 col0" >23.885281</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row11" class="row_heading level0 row11" >Specialization</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row11_col0" class="data row11 col0" >15.562771</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row12" class="row_heading level0 row12" >City</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row12_col0" class="data row12 col0" >15.367965</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row13" class="row_heading level0 row13" >TotalVisits</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row13_col0" class="data row13 col0" >1.482684</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row14" class="row_heading level0 row14" >Page Views Per Visit</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row14_col0" class="data row14 col0" >1.482684</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row15" class="row_heading level0 row15" >Last Activity</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row15_col0" class="data row15 col0" >1.114719</td>
-            </tr>
-            <tr>
-                        <th id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667level0_row16" class="row_heading level0 row16" >Lead Source</th>
-                        <td id="T_14c71e3a_f00d_11ea_8784_88e9fe4e6667row16_col0" class="data row16 col0" >0.389610</td>
-            </tr>
-    </tbody></table>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row0" class="row_heading level0 row0" >Lead Quality</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row0_col0" class="data row0 col0" >51.590909</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Asymmetrique Profile Score</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row1_col0" class="data row1 col0" >45.649351</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row2" class="row_heading level0 row2" >Asymmetrique Activity Score</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row2_col0" class="data row2 col0" >45.649351</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Asymmetrique Profile Index</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row3_col0" class="data row3 col0" >45.649351</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Asymmetrique Activity Index</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row4_col0" class="data row4 col0" >45.649351</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row5" class="row_heading level0 row5" >Tags</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row5_col0" class="data row5 col0" >36.287879</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row6" class="row_heading level0 row6" >Lead Profile</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row6_col0" class="data row6 col0" >29.318182</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row7" class="row_heading level0 row7" >What matters most to you in choosing a course</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row7_col0" class="data row7 col0" >29.318182</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row8" class="row_heading level0 row8" >What is your current occupation</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row8_col0" class="data row8 col0" >29.112554</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row9" class="row_heading level0 row9" >Country</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row9_col0" class="data row9 col0" >26.634199</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row10" class="row_heading level0 row10" >How did you hear about X Education</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row10_col0" class="data row10 col0" >23.885281</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row11" class="row_heading level0 row11" >Specialization</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row11_col0" class="data row11 col0" >15.562771</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row12" class="row_heading level0 row12" >City</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row12_col0" class="data row12 col0" >15.367965</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row13" class="row_heading level0 row13" >TotalVisits</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row13_col0" class="data row13 col0" >1.482684</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row14" class="row_heading level0 row14" >Page Views Per Visit</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row14_col0" class="data row14 col0" >1.482684</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row15" class="row_heading level0 row15" >Last Activity</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row15_col0" class="data row15 col0" >1.114719</td>
+        </tr>
+        <tr>
+                    <th id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667level0_row16" class="row_heading level0 row16" >Lead Source</th>
+                    <td id="T_f151010c_f177_11ea_ab4c_88e9fe4e6667row16_col0" class="data row16 col0" >0.389610</td>
+        </tr>
+</tbody></table>
 
 - More than 45% of the leads have missing values in `Lead Quality`,`Asymmetrique Profile Score`,
   `Asymmetrique Activity Score`,
@@ -962,54 +961,54 @@ nulls.columns = ['Null Percentage']
 nulls[nulls['Null Percentage'] !=0].sort_values(by ='Null Percentage', ascending=False).style.applymap(lambda x : 'color : red' if x > 50 else '')
 ```
 
-<table id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead><tbody>
-<tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row0" class="row_heading level0 row0" >How did you hear about X Education</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row0_col0" class="data row0 col0" >78.463203</td>
+<table id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row0" class="row_heading level0 row0" >How did you hear about X Education</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row0_col0" class="data row0 col0" >78.463203</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Lead Profile</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row1_col0" class="data row1 col0" >74.188312</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Lead Profile</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row1_col0" class="data row1 col0" >74.188312</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row2" class="row_heading level0 row2" >City</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row2_col0" class="data row2 col0" >39.707792</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row2" class="row_heading level0 row2" >City</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row2_col0" class="data row2 col0" >39.707792</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Specialization</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row3_col0" class="data row3 col0" >36.580087</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Specialization</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row3_col0" class="data row3 col0" >36.580087</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Tags</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row4_col0" class="data row4 col0" >36.287879</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Tags</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row4_col0" class="data row4 col0" >36.287879</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row5" class="row_heading level0 row5" >What matters most to you in choosing a course</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row5_col0" class="data row5 col0" >29.318182</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row5" class="row_heading level0 row5" >What matters most to you in choosing a course</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row5_col0" class="data row5 col0" >29.318182</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row6" class="row_heading level0 row6" >What is your current occupation</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row6_col0" class="data row6 col0" >29.112554</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row6" class="row_heading level0 row6" >What is your current occupation</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row6_col0" class="data row6 col0" >29.112554</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row7" class="row_heading level0 row7" >Country</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row7_col0" class="data row7 col0" >26.634199</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row7" class="row_heading level0 row7" >Country</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row7_col0" class="data row7 col0" >26.634199</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row8" class="row_heading level0 row8" >TotalVisits</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row8_col0" class="data row8 col0" >1.482684</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row8" class="row_heading level0 row8" >TotalVisits</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row8_col0" class="data row8 col0" >1.482684</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row9" class="row_heading level0 row9" >Page Views Per Visit</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row9_col0" class="data row9 col0" >1.482684</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row9" class="row_heading level0 row9" >Page Views Per Visit</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row9_col0" class="data row9 col0" >1.482684</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row10" class="row_heading level0 row10" >Last Activity</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row10_col0" class="data row10 col0" >1.114719</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row10" class="row_heading level0 row10" >Last Activity</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row10_col0" class="data row10 col0" >1.114719</td>
             </tr>
             <tr>
-                        <th id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667level0_row11" class="row_heading level0 row11" >Lead Source</th>
-                        <td id="T_15f5c478_f00d_11ea_8784_88e9fe4e6667row11_col0" class="data row11 col0" >0.389610</td>
+                        <th id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667level0_row11" class="row_heading level0 row11" >Lead Source</th>
+                        <td id="T_f1e224f2_f177_11ea_ab4c_88e9fe4e6667row11_col0" class="data row11 col0" >0.389610</td>
             </tr>
     </tbody></table>
 
@@ -1031,48 +1030,48 @@ def lowNulls() :
 lowNulls()
 ```
 
-<table id="T_160942aa_f00d_11ea_8784_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead><tbody>
-<tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row0" class="row_heading level0 row0" >Lead Source</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row0_col0" class="data row0 col0" >0.389610</td>
-            </tr>
+<table id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Null Percentage</th>    </tr></thead><tbody>
             <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Last Activity</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row1_col0" class="data row1 col0" >1.114719</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row2" class="row_heading level0 row2" >TotalVisits</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row2_col0" class="data row2 col0" >1.482684</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Page Views Per Visit</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row3_col0" class="data row3 col0" >1.482684</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Country</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row4_col0" class="data row4 col0" >26.634199</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row5" class="row_heading level0 row5" >What is your current occupation</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row5_col0" class="data row5 col0" >29.112554</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row6" class="row_heading level0 row6" >What matters most to you in choosing a course</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row6_col0" class="data row6 col0" >29.318182</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row7" class="row_heading level0 row7" >Tags</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row7_col0" class="data row7 col0" >36.287879</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row8" class="row_heading level0 row8" >Specialization</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row8_col0" class="data row8 col0" >36.580087</td>
-            </tr>
-            <tr>
-                        <th id="T_160942aa_f00d_11ea_8784_88e9fe4e6667level0_row9" class="row_heading level0 row9" >City</th>
-                        <td id="T_160942aa_f00d_11ea_8784_88e9fe4e6667row9_col0" class="data row9 col0" >39.707792</td>
-            </tr>
-    </tbody></table>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row0" class="row_heading level0 row0" >Lead Source</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row0_col0" class="data row0 col0" >0.389610</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row1" class="row_heading level0 row1" >Last Activity</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row1_col0" class="data row1 col0" >1.114719</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row2" class="row_heading level0 row2" >TotalVisits</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row2_col0" class="data row2 col0" >1.482684</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row3" class="row_heading level0 row3" >Page Views Per Visit</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row3_col0" class="data row3 col0" >1.482684</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row4" class="row_heading level0 row4" >Country</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row4_col0" class="data row4 col0" >26.634199</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row5" class="row_heading level0 row5" >What is your current occupation</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row5_col0" class="data row5 col0" >29.112554</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row6" class="row_heading level0 row6" >What matters most to you in choosing a course</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row6_col0" class="data row6 col0" >29.318182</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row7" class="row_heading level0 row7" >Tags</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row7_col0" class="data row7 col0" >36.287879</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row8" class="row_heading level0 row8" >Specialization</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row8_col0" class="data row8 col0" >36.580087</td>
+        </tr>
+        <tr>
+                    <th id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667level0_row9" class="row_heading level0 row9" >City</th>
+                    <td id="T_f1eabfa4_f177_11ea_ab4c_88e9fe4e6667row9_col0" class="data row9 col0" >39.707792</td>
+        </tr>
+</tbody></table>
 
 - 'Lead Source','Last Activity','TotalVisits','Page Views Per Visit' have less than 2% missing values. These rows could be dropped.
 - We could impute columns with higher missing values on a case by case basis.
@@ -1084,329 +1083,51 @@ lowNulls()
 
 ```python
 # Country Imputation :
-leads.stb.freq(['Country'])
+tab(leads.stb.freq(['Country']))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Country</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>India</td>
-      <td>6492</td>
-      <td>0.957663</td>
-      <td>6492</td>
-      <td>0.957663</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>United States</td>
-      <td>69</td>
-      <td>0.010178</td>
-      <td>6561</td>
-      <td>0.967842</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>United Arab Emirates</td>
-      <td>53</td>
-      <td>0.007818</td>
-      <td>6614</td>
-      <td>0.975660</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Singapore</td>
-      <td>24</td>
-      <td>0.003540</td>
-      <td>6638</td>
-      <td>0.979200</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Saudi Arabia</td>
-      <td>21</td>
-      <td>0.003098</td>
-      <td>6659</td>
-      <td>0.982298</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>United Kingdom</td>
-      <td>15</td>
-      <td>0.002213</td>
-      <td>6674</td>
-      <td>0.984511</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Australia</td>
-      <td>13</td>
-      <td>0.001918</td>
-      <td>6687</td>
-      <td>0.986429</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Qatar</td>
-      <td>10</td>
-      <td>0.001475</td>
-      <td>6697</td>
-      <td>0.987904</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Hong Kong</td>
-      <td>7</td>
-      <td>0.001033</td>
-      <td>6704</td>
-      <td>0.988936</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Bahrain</td>
-      <td>7</td>
-      <td>0.001033</td>
-      <td>6711</td>
-      <td>0.989969</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Oman</td>
-      <td>6</td>
-      <td>0.000885</td>
-      <td>6717</td>
-      <td>0.990854</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>France</td>
-      <td>6</td>
-      <td>0.000885</td>
-      <td>6723</td>
-      <td>0.991739</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>unknown</td>
-      <td>5</td>
-      <td>0.000738</td>
-      <td>6728</td>
-      <td>0.992477</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>South Africa</td>
-      <td>4</td>
-      <td>0.000590</td>
-      <td>6732</td>
-      <td>0.993067</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Nigeria</td>
-      <td>4</td>
-      <td>0.000590</td>
-      <td>6736</td>
-      <td>0.993657</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Kuwait</td>
-      <td>4</td>
-      <td>0.000590</td>
-      <td>6740</td>
-      <td>0.994247</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Germany</td>
-      <td>4</td>
-      <td>0.000590</td>
-      <td>6744</td>
-      <td>0.994837</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Canada</td>
-      <td>4</td>
-      <td>0.000590</td>
-      <td>6748</td>
-      <td>0.995427</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Sweden</td>
-      <td>3</td>
-      <td>0.000443</td>
-      <td>6751</td>
-      <td>0.995870</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Uganda</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6753</td>
-      <td>0.996165</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Philippines</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6755</td>
-      <td>0.996460</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Netherlands</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6757</td>
-      <td>0.996755</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Italy</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6759</td>
-      <td>0.997050</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Ghana</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6761</td>
-      <td>0.997345</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>China</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6763</td>
-      <td>0.997640</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Belgium</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6765</td>
-      <td>0.997935</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Bangladesh</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6767</td>
-      <td>0.998230</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Asia/Pacific Region</td>
-      <td>2</td>
-      <td>0.000295</td>
-      <td>6769</td>
-      <td>0.998525</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Vietnam</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6770</td>
-      <td>0.998672</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Tanzania</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6771</td>
-      <td>0.998820</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Switzerland</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6772</td>
-      <td>0.998967</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Sri Lanka</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6773</td>
-      <td>0.999115</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Russia</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6774</td>
-      <td>0.999262</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Malaysia</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6775</td>
-      <td>0.999410</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>Liberia</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6776</td>
-      <td>0.999557</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Kenya</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6777</td>
-      <td>0.999705</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Indonesia</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6778</td>
-      <td>0.999852</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Denmark</td>
-      <td>1</td>
-      <td>0.000148</td>
-      <td>6779</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+----------------------+---------+-------------+--------------------+----------------------+
+    |    | Country              |   Count |     Percent |   Cumulative Count |   Cumulative Percent |
+    |----+----------------------+---------+-------------+--------------------+----------------------|
+    |  0 | India                |    6492 | 0.957663    |               6492 |             0.957663 |
+    |  1 | United States        |      69 | 0.0101785   |               6561 |             0.967842 |
+    |  2 | United Arab Emirates |      53 | 0.00781826  |               6614 |             0.97566  |
+    |  3 | Singapore            |      24 | 0.00354035  |               6638 |             0.9792   |
+    |  4 | Saudi Arabia         |      21 | 0.0030978   |               6659 |             0.982298 |
+    |  5 | United Kingdom       |      15 | 0.00221272  |               6674 |             0.984511 |
+    |  6 | Australia            |      13 | 0.00191769  |               6687 |             0.986429 |
+    |  7 | Qatar                |      10 | 0.00147514  |               6697 |             0.987904 |
+    |  8 | Hong Kong            |       7 | 0.0010326   |               6704 |             0.988936 |
+    |  9 | Bahrain              |       7 | 0.0010326   |               6711 |             0.989969 |
+    | 10 | Oman                 |       6 | 0.000885086 |               6717 |             0.990854 |
+    | 11 | France               |       6 | 0.000885086 |               6723 |             0.991739 |
+    | 12 | unknown              |       5 | 0.000737572 |               6728 |             0.992477 |
+    | 13 | South Africa         |       4 | 0.000590058 |               6732 |             0.993067 |
+    | 14 | Nigeria              |       4 | 0.000590058 |               6736 |             0.993657 |
+    | 15 | Kuwait               |       4 | 0.000590058 |               6740 |             0.994247 |
+    | 16 | Germany              |       4 | 0.000590058 |               6744 |             0.994837 |
+    | 17 | Canada               |       4 | 0.000590058 |               6748 |             0.995427 |
+    | 18 | Sweden               |       3 | 0.000442543 |               6751 |             0.99587  |
+    | 19 | Uganda               |       2 | 0.000295029 |               6753 |             0.996165 |
+    | 20 | Philippines          |       2 | 0.000295029 |               6755 |             0.99646  |
+    | 21 | Netherlands          |       2 | 0.000295029 |               6757 |             0.996755 |
+    | 22 | Italy                |       2 | 0.000295029 |               6759 |             0.99705  |
+    | 23 | Ghana                |       2 | 0.000295029 |               6761 |             0.997345 |
+    | 24 | China                |       2 | 0.000295029 |               6763 |             0.99764  |
+    | 25 | Belgium              |       2 | 0.000295029 |               6765 |             0.997935 |
+    | 26 | Bangladesh           |       2 | 0.000295029 |               6767 |             0.99823  |
+    | 27 | Asia/Pacific Region  |       2 | 0.000295029 |               6769 |             0.998525 |
+    | 28 | Vietnam              |       1 | 0.000147514 |               6770 |             0.998672 |
+    | 29 | Tanzania             |       1 | 0.000147514 |               6771 |             0.99882  |
+    | 30 | Switzerland          |       1 | 0.000147514 |               6772 |             0.998967 |
+    | 31 | Sri Lanka            |       1 | 0.000147514 |               6773 |             0.999115 |
+    | 32 | Russia               |       1 | 0.000147514 |               6774 |             0.999262 |
+    | 33 | Malaysia             |       1 | 0.000147514 |               6775 |             0.99941  |
+    | 34 | Liberia              |       1 | 0.000147514 |               6776 |             0.999557 |
+    | 35 | Kenya                |       1 | 0.000147514 |               6777 |             0.999705 |
+    | 36 | Indonesia            |       1 | 0.000147514 |               6778 |             0.999852 |
+    | 37 | Denmark              |       1 | 0.000147514 |               6779 |             1        |
+    +----+----------------------+---------+-------------+--------------------+----------------------+
 
 - Since 95% of leads come from India, it is probable that missing values are from India.
 
@@ -1440,8 +1161,8 @@ leads['Specialization'].value_counts()
     IT Projects Management                366
     Supply Chain Management               349
     Banking, Investment And Insurance     338
-    Media and Advertising                 203
     Travel and Tourism                    203
+    Media and Advertising                 203
     International Business                178
     Healthcare Management                 159
     Hospitality Management                114
@@ -1462,7 +1183,7 @@ leads.stb.freq(['City'])
 <div>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: right">
       <th></th>
       <th>City</th>
       <th>Count</th>
@@ -1482,7 +1203,7 @@ leads.stb.freq(['City'])
     </tr>
     <tr>
       <th>1</th>
-      <td>Thane and Outskirts</td>
+      <td>Thane &amp; Outskirts</td>
       <td>752</td>
       <td>0.134985</td>
       <td>3974</td>
@@ -1653,7 +1374,7 @@ for feature in categoricalFeatures :
      'Resubscribed to emails' 'Email Received' 'Email Marked Spam']
 
 
-    Levels in Country  are  ['India' 'Russia' 'Kuwait' 'Oman' 'United Arab Emirates' 'United States'
+    Levels in  Country  are  ['India' 'Russia' 'Kuwait' 'Oman' 'United Arab Emirates' 'United States'
      'Australia' 'United Kingdom' 'Bahrain' 'Ghana' 'Singapore' 'Qatar'
      'Saudi Arabia' 'Belgium' 'France' 'Sri Lanka' 'China' 'Canada'
      'Netherlands' 'Sweden' 'Nigeria' 'Hong Kong' 'Germany'
@@ -2191,201 +1912,51 @@ leads.drop(columns = ['Last Notable Activity'], inplace=True)
 
 ```python
 # Looking at Missing Values again
-leads.stb.missing()
+tab(leads.stb.missing())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Missing</th>
-      <th>Total</th>
-      <th>Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>TotalVisits</th>
-      <td>137</td>
-      <td>9240</td>
-      <td>0.014827</td>
-    </tr>
-    <tr>
-      <th>Page Views Per Visit</th>
-      <td>137</td>
-      <td>9240</td>
-      <td>0.014827</td>
-    </tr>
-    <tr>
-      <th>Last Activity</th>
-      <td>103</td>
-      <td>9240</td>
-      <td>0.011147</td>
-    </tr>
-    <tr>
-      <th>City</th>
-      <td>60</td>
-      <td>9240</td>
-      <td>0.006494</td>
-    </tr>
-    <tr>
-      <th>Lead Source</th>
-      <td>36</td>
-      <td>9240</td>
-      <td>0.003896</td>
-    </tr>
-    <tr>
-      <th>Lead Origin</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Do Not Email</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Converted</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Total Time Spent on Website</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Country</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>Specialization</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>What is your current occupation</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>A free copy of Mastering The Interview</th>
-      <td>0</td>
-      <td>9240</td>
-      <td>0.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----------------------------------------+-----------+---------+------------+
+    |                                        |   Missing |   Total |    Percent |
+    |----------------------------------------+-----------+---------+------------|
+    | TotalVisits                            |       137 |    9240 | 0.0148268  |
+    | Page Views Per Visit                   |       137 |    9240 | 0.0148268  |
+    | Last Activity                          |       103 |    9240 | 0.0111472  |
+    | City                                   |        60 |    9240 | 0.00649351 |
+    | Lead Source                            |        36 |    9240 | 0.0038961  |
+    | Lead Origin                            |         0 |    9240 | 0          |
+    | Do Not Email                           |         0 |    9240 | 0          |
+    | Converted                              |         0 |    9240 | 0          |
+    | Total Time Spent on Website            |         0 |    9240 | 0          |
+    | Country                                |         0 |    9240 | 0          |
+    | Specialization                         |         0 |    9240 | 0          |
+    | What is your current occupation        |         0 |    9240 | 0          |
+    | A free copy of Mastering The Interview |         0 |    9240 | 0          |
+    +----------------------------------------+-----------+---------+------------+
 
 - From the above, the number of missing values is less than 2%. These are deemed missing completely at random. And these rows could be dropped without affecting the analysis
 
 ```python
 leads.dropna(inplace=True)
-leads.stb.missing()
+tab(leads.stb.missing())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Missing</th>
-      <th>Total</th>
-      <th>Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Lead Origin</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Lead Source</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Do Not Email</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Converted</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>TotalVisits</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Total Time Spent on Website</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Page Views Per Visit</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Last Activity</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Country</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>Specialization</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>What is your current occupation</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>City</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>A free copy of Mastering The Interview</th>
-      <td>0</td>
-      <td>9014</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----------------------------------------+-----------+---------+-----------+
+    |                                        |   Missing |   Total |   Percent |
+    |----------------------------------------+-----------+---------+-----------|
+    | Lead Origin                            |         0 |    9014 |         0 |
+    | Lead Source                            |         0 |    9014 |         0 |
+    | Do Not Email                           |         0 |    9014 |         0 |
+    | Converted                              |         0 |    9014 |         0 |
+    | TotalVisits                            |         0 |    9014 |         0 |
+    | Total Time Spent on Website            |         0 |    9014 |         0 |
+    | Page Views Per Visit                   |         0 |    9014 |         0 |
+    | Last Activity                          |         0 |    9014 |         0 |
+    | Country                                |         0 |    9014 |         0 |
+    | Specialization                         |         0 |    9014 |         0 |
+    | What is your current occupation        |         0 |    9014 |         0 |
+    | City                                   |         0 |    9014 |         0 |
+    | A free copy of Mastering The Interview |         0 |    9014 |         0 |
+    +----------------------------------------+-----------+---------+-----------+
 
 #### Grouping Labels with less leads
 
@@ -2393,298 +1964,48 @@ leads.stb.missing()
 
 ```python
 # Country distribution
-leads.stb.freq(['Country'])
+tab(leads.stb.freq(['Country']))
 
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Country</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>India</td>
-      <td>8787</td>
-      <td>0.974817</td>
-      <td>8787</td>
-      <td>0.974817</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>United States</td>
-      <td>51</td>
-      <td>0.005658</td>
-      <td>8838</td>
-      <td>0.980475</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>United Arab Emirates</td>
-      <td>44</td>
-      <td>0.004881</td>
-      <td>8882</td>
-      <td>0.985356</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Saudi Arabia</td>
-      <td>21</td>
-      <td>0.002330</td>
-      <td>8903</td>
-      <td>0.987686</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Singapore</td>
-      <td>17</td>
-      <td>0.001886</td>
-      <td>8920</td>
-      <td>0.989572</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>United Kingdom</td>
-      <td>12</td>
-      <td>0.001331</td>
-      <td>8932</td>
-      <td>0.990903</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Australia</td>
-      <td>11</td>
-      <td>0.001220</td>
-      <td>8943</td>
-      <td>0.992123</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Qatar</td>
-      <td>8</td>
-      <td>0.000888</td>
-      <td>8951</td>
-      <td>0.993011</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Bahrain</td>
-      <td>7</td>
-      <td>0.000777</td>
-      <td>8958</td>
-      <td>0.993787</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Hong Kong</td>
-      <td>6</td>
-      <td>0.000666</td>
-      <td>8964</td>
-      <td>0.994453</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>France</td>
-      <td>6</td>
-      <td>0.000666</td>
-      <td>8970</td>
-      <td>0.995119</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Oman</td>
-      <td>5</td>
-      <td>0.000555</td>
-      <td>8975</td>
-      <td>0.995673</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Nigeria</td>
-      <td>4</td>
-      <td>0.000444</td>
-      <td>8979</td>
-      <td>0.996117</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Kuwait</td>
-      <td>4</td>
-      <td>0.000444</td>
-      <td>8983</td>
-      <td>0.996561</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Germany</td>
-      <td>4</td>
-      <td>0.000444</td>
-      <td>8987</td>
-      <td>0.997005</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>South Africa</td>
-      <td>3</td>
-      <td>0.000333</td>
-      <td>8990</td>
-      <td>0.997337</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Canada</td>
-      <td>3</td>
-      <td>0.000333</td>
-      <td>8993</td>
-      <td>0.997670</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Philippines</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>8995</td>
-      <td>0.997892</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Netherlands</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>8997</td>
-      <td>0.998114</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Belgium</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>8999</td>
-      <td>0.998336</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Bangladesh</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9001</td>
-      <td>0.998558</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Vietnam</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9002</td>
-      <td>0.998669</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Uganda</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9003</td>
-      <td>0.998780</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Tanzania</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9004</td>
-      <td>0.998891</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Switzerland</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9005</td>
-      <td>0.999002</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Sweden</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9006</td>
-      <td>0.999112</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Malaysia</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9007</td>
-      <td>0.999223</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Liberia</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9008</td>
-      <td>0.999334</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Kenya</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9009</td>
-      <td>0.999445</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Italy</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9010</td>
-      <td>0.999556</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Indonesia</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9011</td>
-      <td>0.999667</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Ghana</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9012</td>
-      <td>0.999778</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Denmark</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9013</td>
-      <td>0.999889</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>China</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+----------------------+---------+-------------+--------------------+----------------------+
+    |    | Country              |   Count |     Percent |   Cumulative Count |   Cumulative Percent |
+    |----+----------------------+---------+-------------+--------------------+----------------------|
+    |  0 | India                |    8787 | 0.974817    |               8787 |             0.974817 |
+    |  1 | United States        |      51 | 0.00565787  |               8838 |             0.980475 |
+    |  2 | United Arab Emirates |      44 | 0.0048813   |               8882 |             0.985356 |
+    |  3 | Saudi Arabia         |      21 | 0.00232971  |               8903 |             0.987686 |
+    |  4 | Singapore            |      17 | 0.00188596  |               8920 |             0.989572 |
+    |  5 | United Kingdom       |      12 | 0.00133126  |               8932 |             0.990903 |
+    |  6 | Australia            |      11 | 0.00122032  |               8943 |             0.992123 |
+    |  7 | Qatar                |       8 | 0.000887508 |               8951 |             0.993011 |
+    |  8 | Bahrain              |       7 | 0.00077657  |               8958 |             0.993787 |
+    |  9 | Hong Kong            |       6 | 0.000665631 |               8964 |             0.994453 |
+    | 10 | France               |       6 | 0.000665631 |               8970 |             0.995119 |
+    | 11 | Oman                 |       5 | 0.000554693 |               8975 |             0.995673 |
+    | 12 | Nigeria              |       4 | 0.000443754 |               8979 |             0.996117 |
+    | 13 | Kuwait               |       4 | 0.000443754 |               8983 |             0.996561 |
+    | 14 | Germany              |       4 | 0.000443754 |               8987 |             0.997005 |
+    | 15 | South Africa         |       3 | 0.000332816 |               8990 |             0.997337 |
+    | 16 | Canada               |       3 | 0.000332816 |               8993 |             0.99767  |
+    | 17 | Philippines          |       2 | 0.000221877 |               8995 |             0.997892 |
+    | 18 | Netherlands          |       2 | 0.000221877 |               8997 |             0.998114 |
+    | 19 | Belgium              |       2 | 0.000221877 |               8999 |             0.998336 |
+    | 20 | Bangladesh           |       2 | 0.000221877 |               9001 |             0.998558 |
+    | 21 | Vietnam              |       1 | 0.000110939 |               9002 |             0.998669 |
+    | 22 | Uganda               |       1 | 0.000110939 |               9003 |             0.99878  |
+    | 23 | Tanzania             |       1 | 0.000110939 |               9004 |             0.998891 |
+    | 24 | Switzerland          |       1 | 0.000110939 |               9005 |             0.999002 |
+    | 25 | Sweden               |       1 | 0.000110939 |               9006 |             0.999112 |
+    | 26 | Malaysia             |       1 | 0.000110939 |               9007 |             0.999223 |
+    | 27 | Liberia              |       1 | 0.000110939 |               9008 |             0.999334 |
+    | 28 | Kenya                |       1 | 0.000110939 |               9009 |             0.999445 |
+    | 29 | Italy                |       1 | 0.000110939 |               9010 |             0.999556 |
+    | 30 | Indonesia            |       1 | 0.000110939 |               9011 |             0.999667 |
+    | 31 | Ghana                |       1 | 0.000110939 |               9012 |             0.999778 |
+    | 32 | Denmark              |       1 | 0.000110939 |               9013 |             0.999889 |
+    | 33 | China                |       1 | 0.000110939 |               9014 |             1        |
+    +----+----------------------+---------+-------------+--------------------+----------------------+
 
 - We see that leads from India make 97% of all leads. And others collectively make up 3% and the contribution of each of these countries is <= 1%.
 - To reduce the levels, let us group the minority labels into a new label called 'Outside India'
@@ -2696,97 +2017,31 @@ leadsByCountry = leads['Country'].value_counts(normalize=True)
 lowLeadCountries = leadsByCountry[leadsByCountry <= 0.01].index
 
 leads['Country'].replace(lowLeadCountries,'Outside India',inplace=True)
-leads.stb.freq(['Country'])
+tab(leads.stb.freq(['Country']))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Country</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>India</td>
-      <td>8787</td>
-      <td>0.974817</td>
-      <td>8787</td>
-      <td>0.974817</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Outside India</td>
-      <td>227</td>
-      <td>0.025183</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+---------------+---------+-----------+--------------------+----------------------+
+    |    | Country       |   Count |   Percent |   Cumulative Count |   Cumulative Percent |
+    |----+---------------+---------+-----------+--------------------+----------------------|
+    |  0 | India         |    8787 |  0.974817 |               8787 |             0.974817 |
+    |  1 | Outside India |     227 |  0.025183 |               9014 |             1        |
+    +----+---------------+---------+-----------+--------------------+----------------------+
 
 ##### Lead Origin
 
 ```python
 feature = 'Lead Origin'
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Lead Origin</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Landing Page Submission</td>
-      <td>4870</td>
-      <td>0.540271</td>
-      <td>4870</td>
-      <td>0.540271</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>API</td>
-      <td>3533</td>
-      <td>0.391946</td>
-      <td>8403</td>
-      <td>0.932217</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Lead Add Form</td>
-      <td>581</td>
-      <td>0.064455</td>
-      <td>8984</td>
-      <td>0.996672</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Lead Import</td>
-      <td>30</td>
-      <td>0.003328</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-------------------------+---------+------------+--------------------+----------------------+
+    |    | Lead Origin             |   Count |    Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-------------------------+---------+------------+--------------------+----------------------|
+    |  0 | Landing Page Submission |    4870 | 0.540271   |               4870 |             0.540271 |
+    |  1 | API                     |    3533 | 0.391946   |               8403 |             0.932217 |
+    |  2 | Lead Add Form           |     581 | 0.0644553  |               8984 |             0.996672 |
+    |  3 | Lead Import             |      30 | 0.00332816 |               9014 |             1        |
+    +----+-------------------------+---------+------------+--------------------+----------------------+
 
 - We see that lead origins like `Lead Add Form`,`Lead Import` are less than 1% of all origins.
 - Let's group them into a level called 'Other Lead Origins'
@@ -2795,225 +2050,47 @@ leads.stb.freq([feature])
 # Grouping lead origins
 leadOriginsToGroup = ["Lead Add Form","Lead Import"]
 leads[feature] = leads[feature].replace(leadOriginsToGroup, ['Other Lead Origins']*2)
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Lead Origin</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Landing Page Submission</td>
-      <td>4870</td>
-      <td>0.540271</td>
-      <td>4870</td>
-      <td>0.540271</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>API</td>
-      <td>3533</td>
-      <td>0.391946</td>
-      <td>8403</td>
-      <td>0.932217</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Other Lead Origins</td>
-      <td>611</td>
-      <td>0.067783</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-------------------------+---------+-----------+--------------------+----------------------+
+    |    | Lead Origin             |   Count |   Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-------------------------+---------+-----------+--------------------+----------------------|
+    |  0 | Landing Page Submission |    4870 | 0.540271  |               4870 |             0.540271 |
+    |  1 | API                     |    3533 | 0.391946  |               8403 |             0.932217 |
+    |  2 | Other Lead Origins      |     611 | 0.0677834 |               9014 |             1        |
+    +----+-------------------------+---------+-----------+--------------------+----------------------+
 
 ##### Lead Source
 
 ```python
 feature = 'Lead Source'
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Lead Source</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Google</td>
-      <td>2857</td>
-      <td>0.316951</td>
-      <td>2857</td>
-      <td>0.316951</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Direct Traffic</td>
-      <td>2528</td>
-      <td>0.280453</td>
-      <td>5385</td>
-      <td>0.597404</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Olark Chat</td>
-      <td>1753</td>
-      <td>0.194475</td>
-      <td>7138</td>
-      <td>0.791879</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Organic Search</td>
-      <td>1131</td>
-      <td>0.125471</td>
-      <td>8269</td>
-      <td>0.917351</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Reference</td>
-      <td>443</td>
-      <td>0.049146</td>
-      <td>8712</td>
-      <td>0.966497</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Welingak Website</td>
-      <td>129</td>
-      <td>0.014311</td>
-      <td>8841</td>
-      <td>0.980808</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Referral Sites</td>
-      <td>120</td>
-      <td>0.013313</td>
-      <td>8961</td>
-      <td>0.994120</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Facebook</td>
-      <td>31</td>
-      <td>0.003439</td>
-      <td>8992</td>
-      <td>0.997559</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>bing</td>
-      <td>6</td>
-      <td>0.000666</td>
-      <td>8998</td>
-      <td>0.998225</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Click2call</td>
-      <td>4</td>
-      <td>0.000444</td>
-      <td>9002</td>
-      <td>0.998669</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Social Media</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9004</td>
-      <td>0.998891</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Press_Release</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9006</td>
-      <td>0.999112</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Live Chat</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9008</td>
-      <td>0.999334</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>welearnblog_Home</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9009</td>
-      <td>0.999445</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>testone</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9010</td>
-      <td>0.999556</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>blog</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9011</td>
-      <td>0.999667</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>WeLearn</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9012</td>
-      <td>0.999778</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Pay per Click Ads</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9013</td>
-      <td>0.999889</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>NC_EDM</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-------------------+---------+-------------+--------------------+----------------------+
+    |    | Lead Source       |   Count |     Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-------------------+---------+-------------+--------------------+----------------------|
+    |  0 | Google            |    2857 | 0.316951    |               2857 |             0.316951 |
+    |  1 | Direct Traffic    |    2528 | 0.280453    |               5385 |             0.597404 |
+    |  2 | Olark Chat        |    1753 | 0.194475    |               7138 |             0.791879 |
+    |  3 | Organic Search    |    1131 | 0.125471    |               8269 |             0.917351 |
+    |  4 | Reference         |     443 | 0.0491458   |               8712 |             0.966497 |
+    |  5 | Welingak Website  |     129 | 0.0143111   |               8841 |             0.980808 |
+    |  6 | Referral Sites    |     120 | 0.0133126   |               8961 |             0.99412  |
+    |  7 | Facebook          |      31 | 0.00343909  |               8992 |             0.997559 |
+    |  8 | bing              |       6 | 0.000665631 |               8998 |             0.998225 |
+    |  9 | Click2call        |       4 | 0.000443754 |               9002 |             0.998669 |
+    | 10 | Social Media      |       2 | 0.000221877 |               9004 |             0.998891 |
+    | 11 | Press_Release     |       2 | 0.000221877 |               9006 |             0.999112 |
+    | 12 | Live Chat         |       2 | 0.000221877 |               9008 |             0.999334 |
+    | 13 | welearnblog_Home  |       1 | 0.000110939 |               9009 |             0.999445 |
+    | 14 | testone           |       1 | 0.000110939 |               9010 |             0.999556 |
+    | 15 | blog              |       1 | 0.000110939 |               9011 |             0.999667 |
+    | 16 | WeLearn           |       1 | 0.000110939 |               9012 |             0.999778 |
+    | 17 | Pay per Click Ads |       1 | 0.000110939 |               9013 |             0.999889 |
+    | 18 | NC_EDM            |       1 | 0.000110939 |               9014 |             1        |
+    +----+-------------------+---------+-------------+--------------------+----------------------+
 
 - Lead sources from #7 to #18 contribute to less than 1% of all sources.
 - Let's group these into a new label called 'Other Lead Sources'
@@ -3027,250 +2104,51 @@ labelsToGroup = labelCounts[labelCounts < 0.01].index.values
 
 leads[feature] = leads[feature].replace(labelsToGroup, ['Other '+feature+'s']*len(labelsToGroup))
 
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Lead Source</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Google</td>
-      <td>2857</td>
-      <td>0.316951</td>
-      <td>2857</td>
-      <td>0.316951</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Direct Traffic</td>
-      <td>2528</td>
-      <td>0.280453</td>
-      <td>5385</td>
-      <td>0.597404</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Olark Chat</td>
-      <td>1753</td>
-      <td>0.194475</td>
-      <td>7138</td>
-      <td>0.791879</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Organic Search</td>
-      <td>1131</td>
-      <td>0.125471</td>
-      <td>8269</td>
-      <td>0.917351</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Reference</td>
-      <td>443</td>
-      <td>0.049146</td>
-      <td>8712</td>
-      <td>0.966497</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Welingak Website</td>
-      <td>129</td>
-      <td>0.014311</td>
-      <td>8841</td>
-      <td>0.980808</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Referral Sites</td>
-      <td>120</td>
-      <td>0.013313</td>
-      <td>8961</td>
-      <td>0.994120</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Other Lead Sources</td>
-      <td>53</td>
-      <td>0.005880</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+--------------------+---------+------------+--------------------+----------------------+
+    |    | Lead Source        |   Count |    Percent |   Cumulative Count |   Cumulative Percent |
+    |----+--------------------+---------+------------+--------------------+----------------------|
+    |  0 | Google             |    2857 | 0.316951   |               2857 |             0.316951 |
+    |  1 | Direct Traffic     |    2528 | 0.280453   |               5385 |             0.597404 |
+    |  2 | Olark Chat         |    1753 | 0.194475   |               7138 |             0.791879 |
+    |  3 | Organic Search     |    1131 | 0.125471   |               8269 |             0.917351 |
+    |  4 | Reference          |     443 | 0.0491458  |               8712 |             0.966497 |
+    |  5 | Welingak Website   |     129 | 0.0143111  |               8841 |             0.980808 |
+    |  6 | Referral Sites     |     120 | 0.0133126  |               8961 |             0.99412  |
+    |  7 | Other Lead Sources |      53 | 0.00587974 |               9014 |             1        |
+    +----+--------------------+---------+------------+--------------------+----------------------+
 
 ##### Last Activity
 
 ```python
 feature = 'Last Activity'
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Last Activity</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Email Opened</td>
-      <td>3417</td>
-      <td>0.379077</td>
-      <td>3417</td>
-      <td>0.379077</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>SMS Sent</td>
-      <td>2701</td>
-      <td>0.299645</td>
-      <td>6118</td>
-      <td>0.678722</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Olark Chat Conversation</td>
-      <td>963</td>
-      <td>0.106834</td>
-      <td>7081</td>
-      <td>0.785556</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Page Visited on Website</td>
-      <td>637</td>
-      <td>0.070668</td>
-      <td>7718</td>
-      <td>0.856224</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Converted to Lead</td>
-      <td>422</td>
-      <td>0.046816</td>
-      <td>8140</td>
-      <td>0.903040</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Email Bounced</td>
-      <td>304</td>
-      <td>0.033725</td>
-      <td>8444</td>
-      <td>0.936765</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Email Link Clicked</td>
-      <td>266</td>
-      <td>0.029510</td>
-      <td>8710</td>
-      <td>0.966275</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Form Submitted on Website</td>
-      <td>115</td>
-      <td>0.012758</td>
-      <td>8825</td>
-      <td>0.979033</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Unreachable</td>
-      <td>89</td>
-      <td>0.009874</td>
-      <td>8914</td>
-      <td>0.988906</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Unsubscribed</td>
-      <td>58</td>
-      <td>0.006434</td>
-      <td>8972</td>
-      <td>0.995341</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Had a Phone Conversation</td>
-      <td>25</td>
-      <td>0.002773</td>
-      <td>8997</td>
-      <td>0.998114</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>View in browser link Clicked</td>
-      <td>6</td>
-      <td>0.000666</td>
-      <td>9003</td>
-      <td>0.998780</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Approached upfront</td>
-      <td>5</td>
-      <td>0.000555</td>
-      <td>9008</td>
-      <td>0.999334</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Email Received</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9010</td>
-      <td>0.999556</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Email Marked Spam</td>
-      <td>2</td>
-      <td>0.000222</td>
-      <td>9012</td>
-      <td>0.999778</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Visited Booth in Tradeshow</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9013</td>
-      <td>0.999889</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Resubscribed to emails</td>
-      <td>1</td>
-      <td>0.000111</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+------------------------------+---------+-------------+--------------------+----------------------+
+    |    | Last Activity                |   Count |     Percent |   Cumulative Count |   Cumulative Percent |
+    |----+------------------------------+---------+-------------+--------------------+----------------------|
+    |  0 | Email Opened                 |    3417 | 0.379077    |               3417 |             0.379077 |
+    |  1 | SMS Sent                     |    2701 | 0.299645    |               6118 |             0.678722 |
+    |  2 | Olark Chat Conversation      |     963 | 0.106834    |               7081 |             0.785556 |
+    |  3 | Page Visited on Website      |     637 | 0.0706679   |               7718 |             0.856224 |
+    |  4 | Converted to Lead            |     422 | 0.0468161   |               8140 |             0.90304  |
+    |  5 | Email Bounced                |     304 | 0.0337253   |               8444 |             0.936765 |
+    |  6 | Email Link Clicked           |     266 | 0.0295097   |               8710 |             0.966275 |
+    |  7 | Form Submitted on Website    |     115 | 0.0127579   |               8825 |             0.979033 |
+    |  8 | Unreachable                  |      89 | 0.00987353  |               8914 |             0.988906 |
+    |  9 | Unsubscribed                 |      58 | 0.00643444  |               8972 |             0.995341 |
+    | 10 | Had a Phone Conversation     |      25 | 0.00277346  |               8997 |             0.998114 |
+    | 11 | View in browser link Clicked |       6 | 0.000665631 |               9003 |             0.99878  |
+    | 12 | Approached upfront           |       5 | 0.000554693 |               9008 |             0.999334 |
+    | 13 | Email Received               |       2 | 0.000221877 |               9010 |             0.999556 |
+    | 14 | Email Marked Spam            |       2 | 0.000221877 |               9012 |             0.999778 |
+    | 15 | Visited Booth in Tradeshow   |       1 | 0.000110939 |               9013 |             0.999889 |
+    | 16 | Resubscribed to emails       |       1 | 0.000110939 |               9014 |             1        |
+    +----+------------------------------+---------+-------------+--------------------+----------------------+
 
 - Leads from #9 to #16 contribute to less than 1% of all last activity labels.Moreover, each of these labels contributes to less than 1% of leads.
 - Let's group these into a new label called 'Other Last Activity'
@@ -3284,273 +2162,53 @@ labelsToGroup = labelCounts[labelCounts < 0.01].index.values
 
 leads[feature] = leads[feature].replace(labelsToGroup, ['Other '+feature]*len(labelsToGroup))
 
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Last Activity</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Email Opened</td>
-      <td>3417</td>
-      <td>0.379077</td>
-      <td>3417</td>
-      <td>0.379077</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>SMS Sent</td>
-      <td>2701</td>
-      <td>0.299645</td>
-      <td>6118</td>
-      <td>0.678722</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Olark Chat Conversation</td>
-      <td>963</td>
-      <td>0.106834</td>
-      <td>7081</td>
-      <td>0.785556</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Page Visited on Website</td>
-      <td>637</td>
-      <td>0.070668</td>
-      <td>7718</td>
-      <td>0.856224</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Converted to Lead</td>
-      <td>422</td>
-      <td>0.046816</td>
-      <td>8140</td>
-      <td>0.903040</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Email Bounced</td>
-      <td>304</td>
-      <td>0.033725</td>
-      <td>8444</td>
-      <td>0.936765</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Email Link Clicked</td>
-      <td>266</td>
-      <td>0.029510</td>
-      <td>8710</td>
-      <td>0.966275</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Other Last Activity</td>
-      <td>189</td>
-      <td>0.020967</td>
-      <td>8899</td>
-      <td>0.987242</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Form Submitted on Website</td>
-      <td>115</td>
-      <td>0.012758</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+---------------------------+---------+-----------+--------------------+----------------------+
+    |    | Last Activity             |   Count |   Percent |   Cumulative Count |   Cumulative Percent |
+    |----+---------------------------+---------+-----------+--------------------+----------------------|
+    |  0 | Email Opened              |    3417 | 0.379077  |               3417 |             0.379077 |
+    |  1 | SMS Sent                  |    2701 | 0.299645  |               6118 |             0.678722 |
+    |  2 | Olark Chat Conversation   |     963 | 0.106834  |               7081 |             0.785556 |
+    |  3 | Page Visited on Website   |     637 | 0.0706679 |               7718 |             0.856224 |
+    |  4 | Converted to Lead         |     422 | 0.0468161 |               8140 |             0.90304  |
+    |  5 | Email Bounced             |     304 | 0.0337253 |               8444 |             0.936765 |
+    |  6 | Email Link Clicked        |     266 | 0.0295097 |               8710 |             0.966275 |
+    |  7 | Other Last Activity       |     189 | 0.0209674 |               8899 |             0.987242 |
+    |  8 | Form Submitted on Website |     115 | 0.0127579 |               9014 |             1        |
+    +----+---------------------------+---------+-----------+--------------------+----------------------+
 
 ##### Specialization
 
 ```python
 feature = 'Specialization'
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Specialization</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>No Specialization</td>
-      <td>3230</td>
-      <td>0.358331</td>
-      <td>3230</td>
-      <td>0.358331</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Finance Management</td>
-      <td>959</td>
-      <td>0.106390</td>
-      <td>4189</td>
-      <td>0.464722</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Human Resource Management</td>
-      <td>836</td>
-      <td>0.092745</td>
-      <td>5025</td>
-      <td>0.557466</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Marketing Management</td>
-      <td>822</td>
-      <td>0.091191</td>
-      <td>5847</td>
-      <td>0.648658</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Operations Management</td>
-      <td>498</td>
-      <td>0.055247</td>
-      <td>6345</td>
-      <td>0.703905</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Business Administration</td>
-      <td>397</td>
-      <td>0.044043</td>
-      <td>6742</td>
-      <td>0.747948</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>IT Projects Management</td>
-      <td>366</td>
-      <td>0.040604</td>
-      <td>7108</td>
-      <td>0.788551</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Supply Chain Management</td>
-      <td>344</td>
-      <td>0.038163</td>
-      <td>7452</td>
-      <td>0.826714</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Banking, Investment And Insurance</td>
-      <td>335</td>
-      <td>0.037164</td>
-      <td>7787</td>
-      <td>0.863878</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Travel and Tourism</td>
-      <td>202</td>
-      <td>0.022410</td>
-      <td>7989</td>
-      <td>0.886288</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Media and Advertising</td>
-      <td>202</td>
-      <td>0.022410</td>
-      <td>8191</td>
-      <td>0.908698</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>International Business</td>
-      <td>176</td>
-      <td>0.019525</td>
-      <td>8367</td>
-      <td>0.928223</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Healthcare Management</td>
-      <td>156</td>
-      <td>0.017306</td>
-      <td>8523</td>
-      <td>0.945529</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>E-COMMERCE</td>
-      <td>111</td>
-      <td>0.012314</td>
-      <td>8634</td>
-      <td>0.957843</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Hospitality Management</td>
-      <td>110</td>
-      <td>0.012203</td>
-      <td>8744</td>
-      <td>0.970047</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Retail Management</td>
-      <td>100</td>
-      <td>0.011094</td>
-      <td>8844</td>
-      <td>0.981140</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Rural and Agribusiness</td>
-      <td>73</td>
-      <td>0.008099</td>
-      <td>8917</td>
-      <td>0.989239</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>E-Business</td>
-      <td>57</td>
-      <td>0.006323</td>
-      <td>8974</td>
-      <td>0.995562</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Services Excellence</td>
-      <td>40</td>
-      <td>0.004438</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-----------------------------------+---------+------------+--------------------+----------------------+
+    |    | Specialization                    |   Count |    Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-----------------------------------+---------+------------+--------------------+----------------------|
+    |  0 | No Specialization                 |    3230 | 0.358331   |               3230 |             0.358331 |
+    |  1 | Finance Management                |     959 | 0.10639    |               4189 |             0.464722 |
+    |  2 | Human Resource Management         |     836 | 0.0927446  |               5025 |             0.557466 |
+    |  3 | Marketing Management              |     822 | 0.0911915  |               5847 |             0.648658 |
+    |  4 | Operations Management             |     498 | 0.0552474  |               6345 |             0.703905 |
+    |  5 | Business Administration           |     397 | 0.0440426  |               6742 |             0.747948 |
+    |  6 | IT Projects Management            |     366 | 0.0406035  |               7108 |             0.788551 |
+    |  7 | Supply Chain Management           |     344 | 0.0381629  |               7452 |             0.826714 |
+    |  8 | Banking, Investment And Insurance |     335 | 0.0371644  |               7787 |             0.863878 |
+    |  9 | Travel and Tourism                |     202 | 0.0224096  |               7989 |             0.886288 |
+    | 10 | Media and Advertising             |     202 | 0.0224096  |               8191 |             0.908698 |
+    | 11 | International Business            |     176 | 0.0195252  |               8367 |             0.928223 |
+    | 12 | Healthcare Management             |     156 | 0.0173064  |               8523 |             0.945529 |
+    | 13 | E-COMMERCE                        |     111 | 0.0123142  |               8634 |             0.957843 |
+    | 14 | Hospitality Management            |     110 | 0.0122032  |               8744 |             0.970047 |
+    | 15 | Retail Management                 |     100 | 0.0110939  |               8844 |             0.98114  |
+    | 16 | Rural and Agribusiness            |      73 | 0.00809851 |               8917 |             0.989239 |
+    | 17 | E-Business                        |      57 | 0.0063235  |               8974 |             0.995562 |
+    | 18 | Services Excellence               |      40 | 0.00443754 |               9014 |             1        |
+    +----+-----------------------------------+---------+------------+--------------------+----------------------+
 
 - Lead from from #16 to #18 contribute to less than 2% of all Specialization categories. Moreover, each of these categories contributes to less than 1% of leads.
 - Let's group these into a new label called 'Other Specializations'
@@ -3564,153 +2222,29 @@ labelsToGroup = labelCounts[labelCounts <=0.012121].index.values
 
 leads[feature] = leads[feature].replace(labelsToGroup, ['Other '+feature]*len(labelsToGroup))
 
-leads.stb.freq([feature])
+tab(leads.stb.freq([feature]))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Specialization</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>No Specialization</td>
-      <td>3230</td>
-      <td>0.358331</td>
-      <td>3230</td>
-      <td>0.358331</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Finance Management</td>
-      <td>959</td>
-      <td>0.106390</td>
-      <td>4189</td>
-      <td>0.464722</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Human Resource Management</td>
-      <td>836</td>
-      <td>0.092745</td>
-      <td>5025</td>
-      <td>0.557466</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Marketing Management</td>
-      <td>822</td>
-      <td>0.091191</td>
-      <td>5847</td>
-      <td>0.648658</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Operations Management</td>
-      <td>498</td>
-      <td>0.055247</td>
-      <td>6345</td>
-      <td>0.703905</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Business Administration</td>
-      <td>397</td>
-      <td>0.044043</td>
-      <td>6742</td>
-      <td>0.747948</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>IT Projects Management</td>
-      <td>366</td>
-      <td>0.040604</td>
-      <td>7108</td>
-      <td>0.788551</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Supply Chain Management</td>
-      <td>344</td>
-      <td>0.038163</td>
-      <td>7452</td>
-      <td>0.826714</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Banking, Investment And Insurance</td>
-      <td>335</td>
-      <td>0.037164</td>
-      <td>7787</td>
-      <td>0.863878</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Other Specialization</td>
-      <td>270</td>
-      <td>0.029953</td>
-      <td>8057</td>
-      <td>0.893832</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Travel and Tourism</td>
-      <td>202</td>
-      <td>0.022410</td>
-      <td>8259</td>
-      <td>0.916241</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Media and Advertising</td>
-      <td>202</td>
-      <td>0.022410</td>
-      <td>8461</td>
-      <td>0.938651</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>International Business</td>
-      <td>176</td>
-      <td>0.019525</td>
-      <td>8637</td>
-      <td>0.958176</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Healthcare Management</td>
-      <td>156</td>
-      <td>0.017306</td>
-      <td>8793</td>
-      <td>0.975483</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>E-COMMERCE</td>
-      <td>111</td>
-      <td>0.012314</td>
-      <td>8904</td>
-      <td>0.987797</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Hospitality Management</td>
-      <td>110</td>
-      <td>0.012203</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-----------------------------------+---------+-----------+--------------------+----------------------+
+    |    | Specialization                    |   Count |   Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-----------------------------------+---------+-----------+--------------------+----------------------|
+    |  0 | No Specialization                 |    3230 | 0.358331  |               3230 |             0.358331 |
+    |  1 | Finance Management                |     959 | 0.10639   |               4189 |             0.464722 |
+    |  2 | Human Resource Management         |     836 | 0.0927446 |               5025 |             0.557466 |
+    |  3 | Marketing Management              |     822 | 0.0911915 |               5847 |             0.648658 |
+    |  4 | Operations Management             |     498 | 0.0552474 |               6345 |             0.703905 |
+    |  5 | Business Administration           |     397 | 0.0440426 |               6742 |             0.747948 |
+    |  6 | IT Projects Management            |     366 | 0.0406035 |               7108 |             0.788551 |
+    |  7 | Supply Chain Management           |     344 | 0.0381629 |               7452 |             0.826714 |
+    |  8 | Banking, Investment And Insurance |     335 | 0.0371644 |               7787 |             0.863878 |
+    |  9 | Other Specialization              |     270 | 0.0299534 |               8057 |             0.893832 |
+    | 10 | Travel and Tourism                |     202 | 0.0224096 |               8259 |             0.916241 |
+    | 11 | Media and Advertising             |     202 | 0.0224096 |               8461 |             0.938651 |
+    | 12 | International Business            |     176 | 0.0195252 |               8637 |             0.958176 |
+    | 13 | Healthcare Management             |     156 | 0.0173064 |               8793 |             0.975483 |
+    | 14 | E-COMMERCE                        |     111 | 0.0123142 |               8904 |             0.987797 |
+    | 15 | Hospitality Management            |     110 | 0.0122032 |               9014 |             1        |
+    +----+-----------------------------------+---------+-----------+--------------------+----------------------+
 
 - Cleaning tasks have been completed. No more missing values exist
 
@@ -3740,41 +2274,15 @@ print("Ratio of retained rows", 100*leads.shape[0]/9240)
 ## Data Imbalance
 
 ```python
-leads.stb.freq(['Converted'])
+tab(leads.stb.freq(['Converted']))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Count</th>
-      <th>Percent</th>
-      <th>Cumulative Count</th>
-      <th>Cumulative Percent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>5595</td>
-      <td>0.620701</td>
-      <td>5595</td>
-      <td>0.620701</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>3419</td>
-      <td>0.379299</td>
-      <td>9014</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-------------+---------+-----------+--------------------+----------------------+
+    |    |   Converted |   Count |   Percent |   Cumulative Count |   Cumulative Percent |
+    |----+-------------+---------+-----------+--------------------+----------------------|
+    |  0 |           0 |    5595 |  0.620701 |               5595 |             0.620701 |
+    |  1 |           1 |    3419 |  0.379299 |               9014 |             1        |
+    +----+-------------+---------+-----------+--------------------+----------------------+
 
 ```python
 converted_cond = leads['Converted'] == 1
@@ -3862,7 +2370,7 @@ categoricalUAn(column,figsize=[8,8])
     | Other Lead Origins      |      0.905074 |
     +-------------------------+---------------+
 
-![svg](output_111_1.svg)
+![png](output_111_1.png)
 
 - Leads from `Landing Page Submission` followed by `API` make up 93% of all leads.
 - But it is interesting that 8.3% of leads coming from other sources have the highest conversion rate of 87.5%
@@ -3927,7 +2435,7 @@ categoricalUAn(column,figsize=[8,8])
     | Welingak Website   |      0.984496 |
     +--------------------+---------------+
 
-![svg](output_114_1.svg)
+![png](output_114_1.png)
 
 - Most leads that get converted come from `Google`(31%), followed by `Direct Traffic`(28%) and `Olark Chat`(19%)
 - And leads through `Reference` have a very high conversion rate (91%)
@@ -3968,7 +2476,7 @@ categoricalUAn(feature,figsize=[8,8])
     | Yes |       0.147937 |
     +-----+----------------+
 
-![svg](output_117_1.svg)
+![png](output_117_1.png)
 
 - 92% of leads prefer to be sent Emails about the company. `Do not Email = No`
 - And these are the most converted customers (40%)
@@ -4038,7 +2546,7 @@ categoricalUAn(feature,figsize=[8,8])
     | SMS Sent                  |       0.628286  |
     +---------------------------+-----------------+
 
-![svg](output_120_1.svg)
+![png](output_120_1.png)
 
 - Most leads open emails sent to them (38%) and that's their last activity.
 - Among those leads who's last activity is opening emails, 37% are converted.
@@ -4083,7 +2591,7 @@ categoricalUAn(feature,figsize=[8,8])
     | Outside India |  0.299559 |
     +---------------+-----------+
 
-![svg](output_123_1.svg)
+![png](output_123_1.png)
 
 - Most leads come from India (97%)
 - Out of these 38% are converted.
@@ -4180,7 +2688,7 @@ categoricalUAn(feature)
     | Travel and Tourism                |         0.351485 |
     +-----------------------------------+------------------+
 
-![svg](output_126_1.svg)
+![png](output_126_1.png)
 
 - Specialization of 36% of leads is missing.
 - We have mapped those missing values with 'No Specialization'.There might be two reason for this,
@@ -4243,7 +2751,7 @@ categoricalUAn(feature,figsize=[8,8])
     | Working Professional |                          0.918519 |
     +----------------------+-----------------------------------+
 
-![svg](output_129_1.svg)
+![png](output_129_1.png)
 
 - Although the conversion rate for Working Professional is the highest ! 91.6%, they only make 7.4% of all leads. 60% leads are Unemployed customers followed by 29% with unknown nature of employment
 - Among all the converted leads, Unemployed and Working Professionals top the list.
@@ -4301,7 +2809,7 @@ categoricalUAn(feature)
     | Tier II Cities              | 0.337838 |
     +-----------------------------+----------+
 
-![svg](output_132_1.svg)
+![png](output_132_1.png)
 
 - Most Leads come from 'Mumbai' and they have a decent conversion rate of 36.4%.
 - Leads from Thane and outskirts make up 8.2% with a conversion rate of 44%
@@ -4342,7 +2850,7 @@ categoricalUAn(feature)
     | Yes |                                 0.356648 |
     +-----+------------------------------------------+
 
-![svg](output_135_1.svg)
+![png](output_135_1.png)
 
 - 68% of the leads said "No" for a free copy of 'Mastering The Interview'.
 - Conversion rate of leads who said "No" is high (39.8%).
@@ -4401,7 +2909,7 @@ num_univariate_analysis(column_name,scale='log')
     | max   |     141       |
     +-------+---------------+
 
-![svg](output_139_1.svg)
+![png](output_139_1.png)
 
 - Looks like `Total Visits` have a lot of outliers among both `Converted` and `Un-converted` leads.
 - Let's take a look at the quantiles between 90 and 100.
@@ -4481,7 +2989,7 @@ num_univariate_analysis(column)
     | max   |                      2272     |
     +-------+-------------------------------+
 
-![svg](output_145_1.svg)
+![png](output_145_1.png)
 
 - 'Total Time Spend on Website' has many outliers.
 - Let's look quantiles to confirm this.
@@ -4524,9 +3032,9 @@ tab(leads[column].quantile(np.linspace(0.75,1,25)))
 leads[column].quantile(np.linspace(0.75,1,50)).plot()
 ```
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7febc49bb150>
+    <matplotlib.axes._subplots.AxesSubplot at 0x7fc54b9106d0>
 
-![svg](output_148_1.svg)
+![png](output_148_1.png)
 
 ```python
 # Capping `Total Time Spent on Website` values to 99th percentile
@@ -4569,7 +3077,7 @@ num_univariate_analysis(column)
     | max   |               55       |
     +-------+------------------------+
 
-![svg](output_151_1.svg)
+![png](output_151_1.png)
 
 - 'Page Views Per Visit' has many outliers.
 - Let's look quantiles to confirm this.
@@ -4578,9 +3086,9 @@ num_univariate_analysis(column)
 leads[column].quantile(np.linspace(0.75,1,30)).plot()
 ```
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7febc45a4350>
+    <matplotlib.axes._subplots.AxesSubplot at 0x7fc54c15d890>
 
-![svg](output_153_1.svg)
+![png](output_153_1.png)
 
 - There is a sudden jump between 99th percentile and maximum value.
 - let's cap the values to 99th percentile to avoid skewing the analysis
@@ -4615,9 +3123,9 @@ plt.figure(figsize=[8,8])
 sns.barplot(x=continuous_vars[0], y = 'A free copy of Mastering The Interview', data=leads, hue='Converted')
 ```
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7febc49438d0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x7fc54c0fba90>
 
-![svg](output_160_1.svg)
+![png](output_160_1.png)
 
 - One can see that the proportion of leads with high Total Visits to the website also like a free copy of Mastering The Interview.
 - Incidentally, these are leads with higher conversion rate.
@@ -4631,10 +3139,10 @@ leads.groupby(['Country','Lead Source'])['Converted'].value_counts(normalize=Tru
 .unstack()\
    .plot(
     layout=(2,2),
-    figsize=(14,12), kind='barh', stacked=True)
+    figsize=(14,12), kind='barh', stacked=True);
 ```
 
-![svg](output_163_0.svg)
+![png](output_163_0.png)
 
 - Most leads from India through Reference Sources have very high conversion rate.
 - Leads from outside of India from other Lead sources do not convert at all.
@@ -4652,7 +3160,7 @@ leads.groupby([x,y])['Converted'].value_counts(normalize=True)\
     figsize=(14,12), kind='barh', stacked=True);
 ```
 
-![svg](output_166_0.svg)
+![png](output_166_0.png)
 
 - Working Professionals in Other cities of Maharashtra have higher conversion rates compared to those from Mumbai , Thane and other cities.
 - BusinessMen from Mumbai and Thane & Outskirts are poor leads in comparison to Tier 2 and Other cities .
@@ -4670,7 +3178,7 @@ leads.groupby([x,y])['Converted'].value_counts(normalize=True)\
     figsize=(14,12), kind='barh', stacked=True);
 ```
 
-![svg](output_169_0.svg)
+![png](output_169_0.png)
 
 - SMS and Emails are more favourable for conversion over Website Visits outside of India.
 - Leads from outside of India who click email links have higher conversion rate compared those from India.
@@ -4793,91 +3301,83 @@ correlation(leads[convertedCondition])[1:30:2].style.background_gradient(cmap='G
 
     Correlations for Converted Leads
 
-<table id="T_358dedba_f00d_11ea_8784_88e9fe4e6667" >
-  <thead>
-    <tr>
-      <th class="col_heading level0 col0" >VAR1</th>
-      <th class="col_heading level0 col1" >VAR2</th>
-      <th class="col_heading level0 col2" >CORR</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row0_col0" class="data row0 col0" >Other Lead Origins</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row0_col1" class="data row0 col1" >Reference</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row0_col2" class="data row0 col2" >0.840000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row1_col0" class="data row1 col0" >SMS Sent</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row1_col1" class="data row1 col1" >Email Opened</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row1_col2" class="data row1 col2" >0.750000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row2_col0" class="data row2 col0" >Unemployed</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row2_col1" class="data row2 col1" >Working Professional</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row2_col2" class="data row2 col2" >0.690000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row3_col0" class="data row3 col0" >Page Views Per Visit</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row3_col1" class="data row3 col1" >TotalVisits</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row3_col2" class="data row3 col2" >0.680000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row4_col0" class="data row4 col0" >No Specialization</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row4_col1" class="data row4 col1" >Landing Page Submission</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row4_col2" class="data row4 col2" >0.600000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row5_col0" class="data row5 col0" >Page Views Per Visit</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row5_col1" class="data row5 col1" >Landing Page Submission</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row5_col2" class="data row5 col2" >0.560000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row6_col0" class="data row6 col0" >Landing Page Submission</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row6_col1" class="data row6 col1" >A free copy of Mastering The Interview</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row6_col2" class="data row6 col2" >0.540000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row7_col0" class="data row7 col0" >Unemployed</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row7_col1" class="data row7 col1" >Unknown Occupation</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row7_col2" class="data row7 col2" >0.510000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row8_col0" class="data row8 col0" >Total Time Spent on Website</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row8_col1" class="data row8 col1" >Page Views Per Visit</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row8_col2" class="data row8 col2" >0.500000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row9_col0" class="data row9 col0" >Other Lead Origins</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row9_col1" class="data row9 col1" >Page Views Per Visit</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row9_col2" class="data row9 col2" >0.480000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row10_col0" class="data row10 col0" >Other Lead Origins</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row10_col1" class="data row10 col1" >Total Time Spent on Website</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row10_col2" class="data row10 col2" >0.460000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row11_col0" class="data row11 col0" >Other Lead Origins</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row11_col1" class="data row11 col1" >Landing Page Submission</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row11_col2" class="data row11 col2" >0.450000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row12_col0" class="data row12 col0" >Welingak Website</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row12_col1" class="data row12 col1" >Other Lead Origins</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row12_col2" class="data row12 col2" >0.450000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row13_col0" class="data row13 col0" >Total Time Spent on Website</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row13_col1" class="data row13 col1" >TotalVisits</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row13_col2" class="data row13 col2" >0.440000</td>
-            </tr>
-            <tr>
-                                <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row14_col0" class="data row14 col0" >TotalVisits</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row14_col1" class="data row14 col1" >Total Time Spent on Website</td>
-                        <td id="T_358dedba_f00d_11ea_8784_88e9fe4e6667row14_col2" class="data row14 col2" >0.440000</td>
-            </tr>
-    </tbody></table>
+<table id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667" ><thead>    <tr>        <th class="col_heading level0 col0" >VAR1</th>        <th class="col_heading level0 col1" >VAR2</th>        <th class="col_heading level0 col2" >CORR</th>    </tr></thead><tbody>
+              <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row0_col0" class="data row0 col0" >Other Lead Origins</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row0_col1" class="data row0 col1" >Reference</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row0_col2" class="data row0 col2" >0.840000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row1_col0" class="data row1 col0" >SMS Sent</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row1_col1" class="data row1 col1" >Email Opened</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row1_col2" class="data row1 col2" >0.750000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row2_col0" class="data row2 col0" >Unemployed</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row2_col1" class="data row2 col1" >Working Professional</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row2_col2" class="data row2 col2" >0.690000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row3_col0" class="data row3 col0" >Page Views Per Visit</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row3_col1" class="data row3 col1" >TotalVisits</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row3_col2" class="data row3 col2" >0.680000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row4_col0" class="data row4 col0" >No Specialization</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row4_col1" class="data row4 col1" >Landing Page Submission</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row4_col2" class="data row4 col2" >0.600000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row5_col0" class="data row5 col0" >Page Views Per Visit</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row5_col1" class="data row5 col1" >Landing Page Submission</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row5_col2" class="data row5 col2" >0.560000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row6_col0" class="data row6 col0" >Landing Page Submission</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row6_col1" class="data row6 col1" >A free copy of Mastering The Interview</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row6_col2" class="data row6 col2" >0.540000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row7_col0" class="data row7 col0" >Unemployed</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row7_col1" class="data row7 col1" >Unknown Occupation</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row7_col2" class="data row7 col2" >0.510000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row8_col0" class="data row8 col0" >Total Time Spent on Website</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row8_col1" class="data row8 col1" >Page Views Per Visit</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row8_col2" class="data row8 col2" >0.500000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row9_col0" class="data row9 col0" >Other Lead Origins</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row9_col1" class="data row9 col1" >Page Views Per Visit</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row9_col2" class="data row9 col2" >0.480000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row10_col0" class="data row10 col0" >Other Lead Origins</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row10_col1" class="data row10 col1" >Total Time Spent on Website</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row10_col2" class="data row10 col2" >0.460000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row11_col0" class="data row11 col0" >Other Lead Origins</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row11_col1" class="data row11 col1" >Landing Page Submission</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row11_col2" class="data row11 col2" >0.450000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row12_col0" class="data row12 col0" >Welingak Website</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row12_col1" class="data row12 col1" >Other Lead Origins</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row12_col2" class="data row12 col2" >0.450000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row13_col0" class="data row13 col0" >Total Time Spent on Website</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row13_col1" class="data row13 col1" >TotalVisits</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row13_col2" class="data row13 col2" >0.440000</td>
+          </tr>
+          <tr>
+                              <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row14_col0" class="data row14 col0" >TotalVisits</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row14_col1" class="data row14 col1" >Total Time Spent on Website</td>
+                      <td id="T_f791d2a8_f177_11ea_ab4c_88e9fe4e6667row14_col2" class="data row14 col2" >0.440000</td>
+          </tr>
+  </tbody></table>
 
 - Conversions of leads from other lead origins and the ones through reference have similar conversion behaviour.
 
@@ -4890,84 +3390,83 @@ correlation(leads[unconvertedCondition])[1:30:2].style.background_gradient(cmap=
 
     Correlations for Non-Converted Leads
 
-<table id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667" ><thead>    <tr>        <th class="col_heading level0 col0" >VAR1</th>        <th class="col_heading level0 col1" >VAR2</th>        <th class="col_heading level0 col2" >CORR</th>    </tr></thead>
-<tbody>
-<tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row0_col0" class="data row0 col0" >Unemployed</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row0_col1" class="data row0 col1" >Unknown Occupation</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row0_col2" class="data row0 col2" >0.930000</td>
-            </tr>
+<table id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667" ><thead>    <tr>        <th class="col_heading level0 col0" >VAR1</th>        <th class="col_heading level0 col1" >VAR2</th>        <th class="col_heading level0 col2" >CORR</th>    </tr></thead><tbody>
             <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row1_col0" class="data row1 col0" >Landing Page Submission</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row1_col1" class="data row1 col1" >No Specialization</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row1_col2" class="data row1 col2" >0.870000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row2_col0" class="data row2 col0" >Reference</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row2_col1" class="data row2 col1" >Other Lead Origins</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row2_col2" class="data row2 col2" >0.750000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row3_col0" class="data row3 col0" >TotalVisits</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row3_col1" class="data row3 col1" >Page Views Per Visit</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row3_col2" class="data row3 col2" >0.730000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row4_col0" class="data row4 col0" >Email Bounced</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row4_col1" class="data row4 col1" >Do Not Email</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row4_col2" class="data row4 col2" >0.650000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row5_col0" class="data row5 col0" >Olark Chat</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row5_col1" class="data row5 col1" >Page Views Per Visit</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row5_col2" class="data row5 col2" >0.630000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row6_col0" class="data row6 col0" >Olark Chat</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row6_col1" class="data row6 col1" >Landing Page Submission</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row6_col2" class="data row6 col2" >0.620000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row7_col0" class="data row7 col0" >A free copy of Mastering The Interview</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row7_col1" class="data row7 col1" >No Specialization</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row7_col2" class="data row7 col2" >0.590000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row8_col0" class="data row8 col0" >A free copy of Mastering The Interview</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row8_col1" class="data row8 col1" >Landing Page Submission</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row8_col2" class="data row8 col2" >0.580000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row9_col0" class="data row9 col0" >No Specialization</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row9_col1" class="data row9 col1" >Olark Chat</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row9_col2" class="data row9 col2" >0.570000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row10_col0" class="data row10 col0" >Olark Chat</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row10_col1" class="data row10 col1" >TotalVisits</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row10_col2" class="data row10 col2" >0.520000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row11_col0" class="data row11 col0" >Page Views Per Visit</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row11_col1" class="data row11 col1" >Landing Page Submission</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row11_col2" class="data row11 col2" >0.500000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row12_col0" class="data row12 col0" >Olark Chat Conversation</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row12_col1" class="data row12 col1" >Olark Chat</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row12_col2" class="data row12 col2" >0.500000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row13_col0" class="data row13 col0" >No Specialization</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row13_col1" class="data row13 col1" >Page Views Per Visit</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row13_col2" class="data row13 col2" >0.490000</td>
-            </tr>
-            <tr>
-                                <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row14_col0" class="data row14 col0" >Other Lead Origins</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row14_col1" class="data row14 col1" >Other Lead Sources</td>
-                        <td id="T_35bfdf14_f00d_11ea_8784_88e9fe4e6667row14_col2" class="data row14 col2" >0.480000</td>
-            </tr>
-    </tbody></table>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row0_col0" class="data row0 col0" >Unemployed</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row0_col1" class="data row0 col1" >Unknown Occupation</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row0_col2" class="data row0 col2" >0.930000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row1_col0" class="data row1 col0" >Landing Page Submission</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row1_col1" class="data row1 col1" >No Specialization</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row1_col2" class="data row1 col2" >0.870000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row2_col0" class="data row2 col0" >Reference</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row2_col1" class="data row2 col1" >Other Lead Origins</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row2_col2" class="data row2 col2" >0.750000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row3_col0" class="data row3 col0" >TotalVisits</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row3_col1" class="data row3 col1" >Page Views Per Visit</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row3_col2" class="data row3 col2" >0.730000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row4_col0" class="data row4 col0" >Email Bounced</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row4_col1" class="data row4 col1" >Do Not Email</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row4_col2" class="data row4 col2" >0.650000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row5_col0" class="data row5 col0" >Olark Chat</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row5_col1" class="data row5 col1" >Page Views Per Visit</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row5_col2" class="data row5 col2" >0.630000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row6_col0" class="data row6 col0" >Olark Chat</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row6_col1" class="data row6 col1" >Landing Page Submission</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row6_col2" class="data row6 col2" >0.620000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row7_col0" class="data row7 col0" >A free copy of Mastering The Interview</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row7_col1" class="data row7 col1" >No Specialization</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row7_col2" class="data row7 col2" >0.590000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row8_col0" class="data row8 col0" >A free copy of Mastering The Interview</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row8_col1" class="data row8 col1" >Landing Page Submission</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row8_col2" class="data row8 col2" >0.580000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row9_col0" class="data row9 col0" >No Specialization</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row9_col1" class="data row9 col1" >Olark Chat</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row9_col2" class="data row9 col2" >0.570000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row10_col0" class="data row10 col0" >Olark Chat</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row10_col1" class="data row10 col1" >TotalVisits</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row10_col2" class="data row10 col2" >0.520000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row11_col0" class="data row11 col0" >Page Views Per Visit</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row11_col1" class="data row11 col1" >Landing Page Submission</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row11_col2" class="data row11 col2" >0.500000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row12_col0" class="data row12 col0" >Olark Chat Conversation</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row12_col1" class="data row12 col1" >Olark Chat</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row12_col2" class="data row12 col2" >0.500000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row13_col0" class="data row13 col0" >No Specialization</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row13_col1" class="data row13 col1" >Page Views Per Visit</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row13_col2" class="data row13 col2" >0.490000</td>
+        </tr>
+        <tr>
+                            <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row14_col0" class="data row14 col0" >Other Lead Origins</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row14_col1" class="data row14 col1" >Other Lead Sources</td>
+                    <td id="T_f79afa68_f177_11ea_ab4c_88e9fe4e6667row14_col2" class="data row14 col2" >0.480000</td>
+        </tr>
+</tbody></table>
 
 - From the above, `Unknown Occupation` and `Unemployed` are highly correlated for non-converted leads.
 - This might mean that unemployed leads and leads with unknown occupation have the same conversion behaviour.
@@ -5035,175 +3534,40 @@ RFE_features = pd.DataFrame( {'feature' : X_train.columns, 'rank' : rfe.ranking_
 condition = RFE_features['support'] == True
 rfe_features = RFE_features[condition].sort_values(by='rank',ascending=True )
 print('Features selected by RFE\n')
-rfe_features
+tab(rfe_features)
 ```
 
     Features selected by RFE
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>feature</th>
-      <th>rank</th>
-      <th>support</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Do Not Email</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>Unknown Occupation</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>Unemployed</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>Student</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Housewife</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>No Specialization</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Media and Advertising</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Hospitality Management</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Outside India</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>SMS Sent</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Other Last Activity</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Working Professional</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Olark Chat Conversation</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Email Link Clicked</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Welingak Website</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Reference</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Other Lead Sources</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Olark Chat</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Other Lead Origins</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Landing Page Submission</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Page Views Per Visit</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Total Time Spent on Website</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TotalVisits</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Email Opened</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>Tier II Cities</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+-----------------------------+--------+-----------+
+    |    | feature                     |   rank | support   |
+    |----+-----------------------------+--------+-----------|
+    |  0 | Do Not Email                |      1 | True      |
+    | 42 | Unknown Occupation          |      1 | True      |
+    | 41 | Unemployed                  |      1 | True      |
+    | 40 | Student                     |      1 | True      |
+    | 38 | Housewife                   |      1 | True      |
+    | 33 | No Specialization           |      1 | True      |
+    | 32 | Media and Advertising       |      1 | True      |
+    | 27 | Hospitality Management      |      1 | True      |
+    | 22 | Outside India               |      1 | True      |
+    | 21 | SMS Sent                    |      1 | True      |
+    | 19 | Other Last Activity         |      1 | True      |
+    | 43 | Working Professional        |      1 | True      |
+    | 18 | Olark Chat Conversation     |      1 | True      |
+    | 15 | Email Link Clicked          |      1 | True      |
+    | 13 | Welingak Website            |      1 | True      |
+    | 11 | Reference                   |      1 | True      |
+    | 10 | Other Lead Sources          |      1 | True      |
+    |  8 | Olark Chat                  |      1 | True      |
+    |  6 | Other Lead Origins          |      1 | True      |
+    |  5 | Landing Page Submission     |      1 | True      |
+    |  3 | Page Views Per Visit        |      1 | True      |
+    |  2 | Total Time Spent on Website |      1 | True      |
+    |  1 | TotalVisits                 |      1 | True      |
+    | 16 | Email Opened                |      1 | True      |
+    | 48 | Tier II Cities              |      1 | True      |
+    +----+-----------------------------+--------+-----------+
 
 ```python
 rfeFeatures = rfe_features['feature'].values
@@ -5284,10 +3648,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2503.0</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5005.9</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5005.9</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:36</td>     <th>  Pearson chi2:      </th> <td>6.36e+03</td>
+  <th>Time:</th>                <td>07:36:56</td>     <th>  Pearson chi2:      </th> <td>6.36e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>         <td>20</td>        <th>                     </th>     <td> </td>   
@@ -5445,10 +3809,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2503.4</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5006.8</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5006.8</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:37</td>     <th>  Pearson chi2:      </th> <td>6.36e+03</td>
+  <th>Time:</th>                <td>07:36:56</td>     <th>  Pearson chi2:      </th> <td>6.36e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>         <td>21</td>        <th>                     </th>     <td> </td>   
@@ -5602,10 +3966,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2504.2</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5008.4</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5008.4</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:39</td>     <th>  Pearson chi2:      </th> <td>6.37e+03</td>
+  <th>Time:</th>                <td>07:36:56</td>     <th>  Pearson chi2:      </th> <td>6.37e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>         <td>21</td>        <th>                     </th>     <td> </td>   
@@ -5754,10 +4118,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2506.1</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5012.2</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5012.2</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:41</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -5902,10 +4266,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2506.1</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5012.2</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5012.2</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:42</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6047,10 +4411,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2506.6</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5013.3</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5013.3</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:43</td>     <th>  Pearson chi2:      </th> <td>6.38e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.38e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6187,10 +4551,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2518.3</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5036.6</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5036.6</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:44</td>     <th>  Pearson chi2:      </th> <td>6.35e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.35e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6323,10 +4687,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2519.0</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5038.0</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5038.0</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:45</td>     <th>  Pearson chi2:      </th> <td>6.34e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.34e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6455,10 +4819,10 @@ logm1.fit().summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2520.8</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5041.5</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5041.5</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:46</td>     <th>  Pearson chi2:      </th> <td>6.34e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.34e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6586,10 +4950,10 @@ logm1.summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2531.3</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Sun, 06 Sep 2020</td> <th>  Deviance:          </th> <td>  5062.7</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5062.7</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>12:20:47</td>     <th>  Pearson chi2:      </th> <td>6.40e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.40e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6711,10 +5075,10 @@ logm_final.summary()
   <th>Method:</th>                <td>IRLS</td>       <th>  Log-Likelihood:    </th> <td> -2532.8</td>
 </tr>
 <tr>
-  <th>Date:</th>            <td>Mon, 07 Sep 2020</td> <th>  Deviance:          </th> <td>  5065.5</td>
+  <th>Date:</th>            <td>Tue, 08 Sep 2020</td> <th>  Deviance:          </th> <td>  5065.5</td>
 </tr>
 <tr>
-  <th>Time:</th>                <td>22:02:08</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
+  <th>Time:</th>                <td>07:36:57</td>     <th>  Pearson chi2:      </th> <td>6.39e+03</td>
 </tr>
 <tr>
   <th>No. Iterations:</th>          <td>7</td>        <th>                     </th>     <td> </td>   
@@ -6808,83 +5172,23 @@ y_train_pred = logm_final.predict(X_train_sm)
 # Creating a data frame with converted vs converted probabilities
 y_train_pred_final = pd.DataFrame({'Converted':y_train.values, 'Converted_Prob':y_train_pred})
 y_train_pred_final['CustID'] = y_train.index
-y_train_pred_final.head(10)
+tab(y_train_pred_final.head(10))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Converted_Prob</th>
-      <th>CustID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4948</th>
-      <td>1</td>
-      <td>0.401461</td>
-      <td>4948</td>
-    </tr>
-    <tr>
-      <th>5938</th>
-      <td>1</td>
-      <td>0.318706</td>
-      <td>5938</td>
-    </tr>
-    <tr>
-      <th>5688</th>
-      <td>1</td>
-      <td>0.745966</td>
-      <td>5688</td>
-    </tr>
-    <tr>
-      <th>5381</th>
-      <td>0</td>
-      <td>0.002848</td>
-      <td>5381</td>
-    </tr>
-    <tr>
-      <th>4742</th>
-      <td>1</td>
-      <td>0.801898</td>
-      <td>4742</td>
-    </tr>
-    <tr>
-      <th>5811</th>
-      <td>0</td>
-      <td>0.167979</td>
-      <td>5811</td>
-    </tr>
-    <tr>
-      <th>898</th>
-      <td>0</td>
-      <td>0.088098</td>
-      <td>898</td>
-    </tr>
-    <tr>
-      <th>5316</th>
-      <td>0</td>
-      <td>0.028318</td>
-      <td>5316</td>
-    </tr>
-    <tr>
-      <th>7381</th>
-      <td>0</td>
-      <td>0.251634</td>
-      <td>7381</td>
-    </tr>
-    <tr>
-      <th>1211</th>
-      <td>0</td>
-      <td>0.023542</td>
-      <td>1211</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+------------------+----------+
+    |      |   Converted |   Converted_Prob |   CustID |
+    |------+-------------+------------------+----------|
+    | 4948 |           1 |       0.401461   |     4948 |
+    | 5938 |           1 |       0.318706   |     5938 |
+    | 5688 |           1 |       0.745966   |     5688 |
+    | 5381 |           0 |       0.00284809 |     5381 |
+    | 4742 |           1 |       0.801898   |     4742 |
+    | 5811 |           0 |       0.167979   |     5811 |
+    |  898 |           0 |       0.0880976  |      898 |
+    | 5316 |           0 |       0.0283184  |     5316 |
+    | 7381 |           0 |       0.251634   |     7381 |
+    | 1211 |           0 |       0.0235422  |     1211 |
+    +------+-------------+------------------+----------+
 
 #### Predictions with cut off = 0.5
 
@@ -6893,94 +5197,23 @@ y_train_pred_final.head(10)
 y_train_pred_final['predicted'] = y_train_pred_final.Converted_Prob.map(lambda x: 1 if x > 0.5 else 0)
 
 # Let's see the head
-y_train_pred_final.head(10)
+tab(y_train_pred_final.head(10))
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Converted_Prob</th>
-      <th>CustID</th>
-      <th>predicted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4948</th>
-      <td>1</td>
-      <td>0.401461</td>
-      <td>4948</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5938</th>
-      <td>1</td>
-      <td>0.318706</td>
-      <td>5938</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5688</th>
-      <td>1</td>
-      <td>0.745966</td>
-      <td>5688</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5381</th>
-      <td>0</td>
-      <td>0.002848</td>
-      <td>5381</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4742</th>
-      <td>1</td>
-      <td>0.801898</td>
-      <td>4742</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5811</th>
-      <td>0</td>
-      <td>0.167979</td>
-      <td>5811</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>898</th>
-      <td>0</td>
-      <td>0.088098</td>
-      <td>898</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5316</th>
-      <td>0</td>
-      <td>0.028318</td>
-      <td>5316</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7381</th>
-      <td>0</td>
-      <td>0.251634</td>
-      <td>7381</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1211</th>
-      <td>0</td>
-      <td>0.023542</td>
-      <td>1211</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+------------------+----------+-------------+
+    |      |   Converted |   Converted_Prob |   CustID |   predicted |
+    |------+-------------+------------------+----------+-------------|
+    | 4948 |           1 |       0.401461   |     4948 |           0 |
+    | 5938 |           1 |       0.318706   |     5938 |           0 |
+    | 5688 |           1 |       0.745966   |     5688 |           1 |
+    | 5381 |           0 |       0.00284809 |     5381 |           0 |
+    | 4742 |           1 |       0.801898   |     4742 |           1 |
+    | 5811 |           0 |       0.167979   |     5811 |           0 |
+    |  898 |           0 |       0.0880976  |      898 |           0 |
+    | 5316 |           0 |       0.0283184  |     5316 |           0 |
+    | 7381 |           0 |       0.251634   |     7381 |           0 |
+    | 1211 |           0 |       0.0235422  |     1211 |           0 |
+    +------+-------------+------------------+----------+-------------+
 
 #### Confusion Matrix
 
@@ -7061,7 +5294,7 @@ def draw_roc( actual, probs ):
 draw_roc(y_train_pred_final.Converted, y_train_pred_final.Converted_Prob)
 ```
 
-![svg](output_247_0.svg)
+![png](output_247_0.png)
 
 #### Finding Optimal Cutoff Point
 
@@ -7072,119 +5305,18 @@ draw_roc(y_train_pred_final.Converted, y_train_pred_final.Converted_Prob)
 numbers = [float(x)/10 for x in range(10)]
 for i in numbers:
     y_train_pred_final[i]= y_train_pred_final.Converted_Prob.map(lambda x: 1 if x > i else 0)
-y_train_pred_final.head()
+tab(y_train_pred_final.head())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Converted_Prob</th>
-      <th>CustID</th>
-      <th>predicted</th>
-      <th>0.0</th>
-      <th>0.1</th>
-      <th>0.2</th>
-      <th>0.3</th>
-      <th>0.4</th>
-      <th>0.5</th>
-      <th>0.6</th>
-      <th>0.7</th>
-      <th>0.8</th>
-      <th>0.9</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4948</th>
-      <td>1</td>
-      <td>0.401461</td>
-      <td>4948</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5938</th>
-      <td>1</td>
-      <td>0.318706</td>
-      <td>5938</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5688</th>
-      <td>1</td>
-      <td>0.745966</td>
-      <td>5688</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5381</th>
-      <td>0</td>
-      <td>0.002848</td>
-      <td>5381</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4742</th>
-      <td>1</td>
-      <td>0.801898</td>
-      <td>4742</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+    |      |   Converted |   Converted_Prob |   CustID |   predicted |   0.0 |   0.1 |   0.2 |   0.3 |   0.4 |   0.5 |   0.6 |   0.7 |   0.8 |   0.9 |
+    |------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+    | 4948 |           1 |       0.401461   |     4948 |           0 |     1 |     1 |     1 |     1 |     1 |     0 |     0 |     0 |     0 |     0 |
+    | 5938 |           1 |       0.318706   |     5938 |           0 |     1 |     1 |     1 |     1 |     0 |     0 |     0 |     0 |     0 |     0 |
+    | 5688 |           1 |       0.745966   |     5688 |           1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     0 |     0 |
+    | 5381 |           0 |       0.00284809 |     5381 |           0 |     1 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |
+    | 4742 |           1 |       0.801898   |     4742 |           1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     0 |
+    +------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
 
 ```python
 # Now let's calculate accuracy sensitivity and specificity for various probability cutoffs.
@@ -7204,20 +5336,23 @@ for i in num:
     speci = cm1[0,0]/(cm1[0,0]+cm1[0,1])
     sensi = cm1[1,1]/(cm1[1,0]+cm1[1,1])
     cutoff_df.loc[i] =[ i ,accuracy,sensi,speci]
-print(cutoff_df)
+tab(cutoff_df)
 ```
 
-    prob  accuracy     sensi     speci
-    0.0   0.0  0.379141  1.000000  0.000000
-    0.1   0.1  0.632905  0.974498  0.424304
-    0.2   0.2  0.758599  0.923077  0.658157
-    0.3   0.3  0.793311  0.869983  0.746490
-    0.4   0.4  0.818830  0.781355  0.841716
-    0.5   0.5  0.817087  0.707776  0.883840
-    0.6   0.6  0.808052  0.634197  0.914220
-    0.7   0.7  0.782533  0.513796  0.946643
-    0.8   0.8  0.755112  0.405518  0.968598
-    0.9   0.9  0.715961  0.273829  0.985959
+    +-----+--------+------------+----------+----------+
+    |     |   prob |   accuracy |    sensi |    speci |
+    |-----+--------+------------+----------+----------|
+    | 0   |    0   |   0.379141 | 1        | 0        |
+    | 0.1 |    0.1 |   0.632905 | 0.974498 | 0.424304 |
+    | 0.2 |    0.2 |   0.758599 | 0.923077 | 0.658157 |
+    | 0.3 |    0.3 |   0.793311 | 0.869983 | 0.74649  |
+    | 0.4 |    0.4 |   0.81883  | 0.781355 | 0.841716 |
+    | 0.5 |    0.5 |   0.817087 | 0.707776 | 0.88384  |
+    | 0.6 |    0.6 |   0.808052 | 0.634197 | 0.91422  |
+    | 0.7 |    0.7 |   0.782533 | 0.513796 | 0.946643 |
+    | 0.8 |    0.8 |   0.755112 | 0.405518 | 0.968598 |
+    | 0.9 |    0.9 |   0.715961 | 0.273829 | 0.985959 |
+    +-----+--------+------------+----------+----------+
 
 ```python
 # Let's plot accuracy sensitivity and specificity for various cutoff probabilities.
@@ -7240,132 +5375,25 @@ plt.show()
 
 ```
 
-![svg](output_252_0.svg)
+![png](output_252_0.png)
 
 - From the curve above, 0.36 is the optimum cutoff probability.
 
 ```python
 y_train_pred_final['final_predicted'] = y_train_pred_final.Converted_Prob.map( lambda x: 1 if x > 0.36 else 0)
 
-y_train_pred_final.head()
+tab(y_train_pred_final.head())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Converted_Prob</th>
-      <th>CustID</th>
-      <th>predicted</th>
-      <th>0.0</th>
-      <th>0.1</th>
-      <th>0.2</th>
-      <th>0.3</th>
-      <th>0.4</th>
-      <th>0.5</th>
-      <th>0.6</th>
-      <th>0.7</th>
-      <th>0.8</th>
-      <th>0.9</th>
-      <th>final_predicted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>4948</th>
-      <td>1</td>
-      <td>0.401461</td>
-      <td>4948</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5938</th>
-      <td>1</td>
-      <td>0.318706</td>
-      <td>5938</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5688</th>
-      <td>1</td>
-      <td>0.745966</td>
-      <td>5688</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5381</th>
-      <td>0</td>
-      <td>0.002848</td>
-      <td>5381</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4742</th>
-      <td>1</td>
-      <td>0.801898</td>
-      <td>4742</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------------------+
+    |      |   Converted |   Converted_Prob |   CustID |   predicted |   0.0 |   0.1 |   0.2 |   0.3 |   0.4 |   0.5 |   0.6 |   0.7 |   0.8 |   0.9 |   final_predicted |
+    |------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------------------|
+    | 4948 |           1 |       0.401461   |     4948 |           0 |     1 |     1 |     1 |     1 |     1 |     0 |     0 |     0 |     0 |     0 |                 1 |
+    | 5938 |           1 |       0.318706   |     5938 |           0 |     1 |     1 |     1 |     1 |     0 |     0 |     0 |     0 |     0 |     0 |                 0 |
+    | 5688 |           1 |       0.745966   |     5688 |           1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     0 |     0 |                 1 |
+    | 5381 |           0 |       0.00284809 |     5381 |           0 |     1 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |                 0 |
+    | 4742 |           1 |       0.801898   |     4742 |           1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     1 |     0 |                 1 |
+    +------+-------------+------------------+----------+-------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------------------+
 
 ```python
 # Let's check the overall accuracy.
@@ -7407,11 +5435,11 @@ print('Negative Predictive Power : ',  round(100*negativePredictivePower,3),'%')
     Negative Predictive Power :  87.228 %
 
 ```python
-## ROC curve for cut off probability of 0.364
+## ROC curve for cut off probability of 0.36
 draw_roc(y_train_pred_final.Converted, y_train_pred_final.final_predicted)
 ```
 
-![svg](output_258_0.svg)
+![png](output_258_0.png)
 
 #### Precision and Recall
 
@@ -7439,11 +5467,11 @@ print('Recall :', confusion[1,1]/(confusion[1,0]+confusion[1,1]))
 #Doing the same using the sklearn.
 from sklearn.metrics import precision_score, recall_score
 print('Precision : ', precision_score(y_train_pred_final.Converted, y_train_pred_final.predicted))
-print('Precision :', recall_score(y_train_pred_final.Converted, y_train_pred_final.predicted))
+print('Recall :', recall_score(y_train_pred_final.Converted, y_train_pred_final.predicted))
 ```
 
     Precision :  0.7881750465549349
-    Precision : 0.7077759197324415
+    Recall : 0.7077759197324415
 
 #### Precision and Recall Tradeoff
 
@@ -7456,7 +5484,7 @@ plt.plot(thresholds, r[:-1], "r-")
 plt.show()
 ```
 
-![svg](output_265_0.svg)
+![png](output_265_0.png)
 
 - The cut off point from precision-recall curve is ~0.4.
 - Note that we have used the cut off obtained from 'Sensitivity-Specificity' trade off to predict conversions in this analysis.
@@ -7473,53 +5501,18 @@ y_test_pred = logm_final.predict(X_test_sm)
 ```python
 # predicted conversions vs actual conversions and customer ID
 y_test_predictions = pd.DataFrame({'Converted' :y_test, 'Conversion Probability' : y_test_pred, 'CustID' : y_test.index})
-y_test_predictions.head()
+tab(y_test_predictions.head())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Conversion Probability</th>
-      <th>CustID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1260</th>
-      <td>0</td>
-      <td>0.116132</td>
-      <td>1260</td>
-    </tr>
-    <tr>
-      <th>2104</th>
-      <td>1</td>
-      <td>0.318706</td>
-      <td>2104</td>
-    </tr>
-    <tr>
-      <th>7105</th>
-      <td>1</td>
-      <td>0.982061</td>
-      <td>7105</td>
-    </tr>
-    <tr>
-      <th>8916</th>
-      <td>0</td>
-      <td>0.420480</td>
-      <td>8916</td>
-    </tr>
-    <tr>
-      <th>2822</th>
-      <td>0</td>
-      <td>0.029267</td>
-      <td>2822</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+--------------------------+----------+
+    |      |   Converted |   Conversion Probability |   CustID |
+    |------+-------------+--------------------------+----------|
+    | 1260 |           0 |                0.116132  |     1260 |
+    | 2104 |           1 |                0.318706  |     2104 |
+    | 7105 |           1 |                0.982061  |     7105 |
+    | 8916 |           0 |                0.42048   |     8916 |
+    | 2822 |           0 |                0.0292669 |     2822 |
+    +------+-------------+--------------------------+----------+
 
 ```python
 # predictions with optimal cut off = 0.35
@@ -7580,7 +5573,7 @@ print('Negative Predictive Power : ',  round(100*negativePredictivePower,3),'%')
 draw_roc(y_test_predictions['Converted'],y_test_predictions['Predicted'])
 ```
 
-![svg](output_279_0.svg)
+![png](output_279_0.png)
 
 - Note the AUC is 0.79 on the test test
 
@@ -7639,88 +5632,28 @@ print('Negative Predictive Power : ',  round(100*negativePredictivePower,3),'%')
 draw_roc(leads['Converted'], leads['Predicted'])
 ```
 
-![svg](output_286_0.svg)
+![png](output_286_0.png)
 
 ```python
 # Lead Scores
 leads['Lead Score'] = leads['Conversion Probability']*100
-leads[['Prospect ID','Lead No','Lead Score']].sort_values(by='Lead Score', ascending=False)[:10]
+tab(leads[['Prospect ID','Lead No','Lead Score']].sort_values(by='Lead Score', ascending=False)[:10])
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Prospect ID</th>
-      <th>Lead No</th>
-      <th>Lead Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>7219</th>
-      <td>ed62264f-7666-4bf9-9cb6-5b9a825f1e67</td>
-      <td>594038</td>
-      <td>99.911806</td>
-    </tr>
-    <tr>
-      <th>7234</th>
-      <td>7e2819e8-97f0-416b-bcb6-45ef14f0e11a</td>
-      <td>593962</td>
-      <td>99.855878</td>
-    </tr>
-    <tr>
-      <th>2378</th>
-      <td>8ff353ab-1207-4608-a8cc-8172ea7c12eb</td>
-      <td>636860</td>
-      <td>99.830268</td>
-    </tr>
-    <tr>
-      <th>7327</th>
-      <td>95d1590f-7c47-4f40-9806-388f4472d3a4</td>
-      <td>593208</td>
-      <td>99.825999</td>
-    </tr>
-    <tr>
-      <th>2497</th>
-      <td>e5fb32dd-b3b7-4fbf-972d-c13d2cfc6866</td>
-      <td>635761</td>
-      <td>99.822078</td>
-    </tr>
-    <tr>
-      <th>5671</th>
-      <td>623bc6c9-9184-4437-b38f-d374be49d1a3</td>
-      <td>606508</td>
-      <td>99.822078</td>
-    </tr>
-    <tr>
-      <th>7094</th>
-      <td>9ec1cafe-b019-498e-b246-7ab06167d72c</td>
-      <td>595141</td>
-      <td>99.819952</td>
-    </tr>
-    <tr>
-      <th>7187</th>
-      <td>f33166e8-d8d3-4e8c-b9d0-8a1922c35910</td>
-      <td>594369</td>
-      <td>99.817589</td>
-    </tr>
-    <tr>
-      <th>7420</th>
-      <td>2caa32d0-50b7-4d29-b31f-2528b06d7bc8</td>
-      <td>592625</td>
-      <td>99.816186</td>
-    </tr>
-    <tr>
-      <th>8120</th>
-      <td>bf4a03bc-b747-45a6-a6b5-659afa3bf3ac</td>
-      <td>587853</td>
-      <td>99.815060</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+--------------------------------------+-----------+--------------+
+    |      | Prospect ID                          |   Lead No |   Lead Score |
+    |------+--------------------------------------+-----------+--------------|
+    | 7219 | ed62264f-7666-4bf9-9cb6-5b9a825f1e67 |    594038 |      99.9118 |
+    | 7234 | 7e2819e8-97f0-416b-bcb6-45ef14f0e11a |    593962 |      99.8559 |
+    | 2378 | 8ff353ab-1207-4608-a8cc-8172ea7c12eb |    636860 |      99.8303 |
+    | 7327 | 95d1590f-7c47-4f40-9806-388f4472d3a4 |    593208 |      99.826  |
+    | 2497 | e5fb32dd-b3b7-4fbf-972d-c13d2cfc6866 |    635761 |      99.8221 |
+    | 5671 | 623bc6c9-9184-4437-b38f-d374be49d1a3 |    606508 |      99.8221 |
+    | 7094 | 9ec1cafe-b019-498e-b246-7ab06167d72c |    595141 |      99.82   |
+    | 7187 | f33166e8-d8d3-4e8c-b9d0-8a1922c35910 |    594369 |      99.8176 |
+    | 7420 | 2caa32d0-50b7-4d29-b31f-2528b06d7bc8 |    592625 |      99.8162 |
+    | 8120 | bf4a03bc-b747-45a6-a6b5-659afa3bf3ac |    587853 |      99.8151 |
+    +------+--------------------------------------+-----------+--------------+
 
 ## Score Sheet for X Education
 
@@ -7737,71 +5670,18 @@ y_test_predictions = y_test_predictions.sort_values(by='Conversion Probability',
 y_test_predictions['decile'] = pd.qcut(y_test_predictions['Conversion Probability'],10,labels=range(10,0,-1))
 y_test_predictions['Converted'] = y_test_predictions['Converted'].astype('int')
 y_test_predictions['Un Converted'] = 1 - y_test_predictions['Converted']
-y_test_predictions.head()
+tab(y_test_predictions.head())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Converted</th>
-      <th>Conversion Probability</th>
-      <th>CustID</th>
-      <th>Predicted</th>
-      <th>decile</th>
-      <th>Un Converted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>7327</th>
-      <td>1</td>
-      <td>0.998260</td>
-      <td>7327</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7420</th>
-      <td>1</td>
-      <td>0.998162</td>
-      <td>7420</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4613</th>
-      <td>1</td>
-      <td>0.997809</td>
-      <td>4613</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6243</th>
-      <td>1</td>
-      <td>0.997674</td>
-      <td>6243</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7324</th>
-      <td>1</td>
-      <td>0.997402</td>
-      <td>7324</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +------+-------------+--------------------------+----------+-------------+----------+----------------+
+    |      |   Converted |   Conversion Probability |   CustID |   Predicted |   decile |   Un Converted |
+    |------+-------------+--------------------------+----------+-------------+----------+----------------|
+    | 7327 |           1 |                 0.99826  |     7327 |           1 |        1 |              0 |
+    | 7420 |           1 |                 0.998162 |     7420 |           1 |        1 |              0 |
+    | 4613 |           1 |                 0.997809 |     4613 |           1 |        1 |              0 |
+    | 6243 |           1 |                 0.997674 |     6243 |           1 |        1 |              0 |
+    | 7324 |           1 |                 0.997402 |     7324 |           1 |        1 |              0 |
+    +------+-------------+--------------------------+----------+-------------+----------+----------------+
 
 ```python
 df1 = pd.pivot_table(data=y_test_predictions,index=['decile'],values=['Converted','Un Converted','Conversion Probability'],
@@ -7817,246 +5697,38 @@ converted_sum = df1['Converted Count'].sum()
 unconverted_sum = df1['Un Converted Count'].sum()
 df1['Converted %'] = df1['Converted Count'] / converted_sum
 df1['Un Converted %'] = df1['Un Converted Count'] / unconverted_sum
-df1.head()
+tab(df1.head())
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Decile</th>
-      <th>Max Prob</th>
-      <th>Min Prob</th>
-      <th>Converted Count</th>
-      <th>Un Converted Count</th>
-      <th>Total Leads</th>
-      <th>Conversion Rate</th>
-      <th>Converted %</th>
-      <th>Un Converted %</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>9</th>
-      <td>1</td>
-      <td>0.998260</td>
-      <td>0.910258</td>
-      <td>257</td>
-      <td>14</td>
-      <td>271</td>
-      <td>18.357143</td>
-      <td>0.250243</td>
-      <td>0.008343</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2</td>
-      <td>0.909066</td>
-      <td>0.781567</td>
-      <td>224</td>
-      <td>46</td>
-      <td>270</td>
-      <td>4.869565</td>
-      <td>0.218111</td>
-      <td>0.027414</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>3</td>
-      <td>0.780757</td>
-      <td>0.564123</td>
-      <td>182</td>
-      <td>89</td>
-      <td>271</td>
-      <td>2.044944</td>
-      <td>0.177215</td>
-      <td>0.053039</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>4</td>
-      <td>0.563613</td>
-      <td>0.380673</td>
-      <td>118</td>
-      <td>152</td>
-      <td>270</td>
-      <td>0.776316</td>
-      <td>0.114898</td>
-      <td>0.090584</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5</td>
-      <td>0.380229</td>
-      <td>0.251101</td>
-      <td>113</td>
-      <td>157</td>
-      <td>270</td>
-      <td>0.719745</td>
-      <td>0.110029</td>
-      <td>0.093564</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+
+    |    |   Decile |   Max Prob |   Min Prob |   Converted Count |   Un Converted Count |   Total Leads |   Conversion Rate |   Converted % |   Un Converted % |
+    |----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------|
+    |  9 |        1 |   0.99826  |   0.910258 |               257 |                   14 |           271 |         18.3571   |      0.250243 |       0.00834327 |
+    |  8 |        2 |   0.909066 |   0.781567 |               224 |                   46 |           270 |          4.86957  |      0.218111 |       0.0274136  |
+    |  7 |        3 |   0.780757 |   0.564123 |               182 |                   89 |           271 |          2.04494  |      0.177215 |       0.0530393  |
+    |  6 |        4 |   0.563613 |   0.380673 |               118 |                  152 |           270 |          0.776316 |      0.114898 |       0.090584   |
+    |  5 |        5 |   0.380229 |   0.251101 |               113 |                  157 |           270 |          0.719745 |      0.110029 |       0.0935638  |
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+
 
 ```python
 df1['ks_stats'] = np.round(((df1['Converted Count'] / df1['Converted Count'].sum()).cumsum() -(df1['Un Converted Count'] / df1['Un Converted Count'].sum()).cumsum()), 4) * 100
-df1
+tab(df1)
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Decile</th>
-      <th>Max Prob</th>
-      <th>Min Prob</th>
-      <th>Converted Count</th>
-      <th>Un Converted Count</th>
-      <th>Total Leads</th>
-      <th>Conversion Rate</th>
-      <th>Converted %</th>
-      <th>Un Converted %</th>
-      <th>ks_stats</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>9</th>
-      <td>1</td>
-      <td>0.998260</td>
-      <td>0.910258</td>
-      <td>257</td>
-      <td>14</td>
-      <td>271</td>
-      <td>18.357143</td>
-      <td>0.250243</td>
-      <td>0.008343</td>
-      <td>24.19</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2</td>
-      <td>0.909066</td>
-      <td>0.781567</td>
-      <td>224</td>
-      <td>46</td>
-      <td>270</td>
-      <td>4.869565</td>
-      <td>0.218111</td>
-      <td>0.027414</td>
-      <td>43.26</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>3</td>
-      <td>0.780757</td>
-      <td>0.564123</td>
-      <td>182</td>
-      <td>89</td>
-      <td>271</td>
-      <td>2.044944</td>
-      <td>0.177215</td>
-      <td>0.053039</td>
-      <td>55.68</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>4</td>
-      <td>0.563613</td>
-      <td>0.380673</td>
-      <td>118</td>
-      <td>152</td>
-      <td>270</td>
-      <td>0.776316</td>
-      <td>0.114898</td>
-      <td>0.090584</td>
-      <td>58.11</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5</td>
-      <td>0.380229</td>
-      <td>0.251101</td>
-      <td>113</td>
-      <td>157</td>
-      <td>270</td>
-      <td>0.719745</td>
-      <td>0.110029</td>
-      <td>0.093564</td>
-      <td>59.76</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6</td>
-      <td>0.250676</td>
-      <td>0.149579</td>
-      <td>64</td>
-      <td>207</td>
-      <td>271</td>
-      <td>0.309179</td>
-      <td>0.062317</td>
-      <td>0.123361</td>
-      <td>53.65</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>7</td>
-      <td>0.149564</td>
-      <td>0.113845</td>
-      <td>37</td>
-      <td>233</td>
-      <td>270</td>
-      <td>0.158798</td>
-      <td>0.036027</td>
-      <td>0.138856</td>
-      <td>43.37</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>8</td>
-      <td>0.113644</td>
-      <td>0.069387</td>
-      <td>22</td>
-      <td>249</td>
-      <td>271</td>
-      <td>0.088353</td>
-      <td>0.021422</td>
-      <td>0.148391</td>
-      <td>30.67</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>9</td>
-      <td>0.069378</td>
-      <td>0.029278</td>
-      <td>8</td>
-      <td>256</td>
-      <td>264</td>
-      <td>0.031250</td>
-      <td>0.007790</td>
-      <td>0.152563</td>
-      <td>16.19</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>10</td>
-      <td>0.029267</td>
-      <td>0.002231</td>
-      <td>2</td>
-      <td>275</td>
-      <td>277</td>
-      <td>0.007273</td>
-      <td>0.001947</td>
-      <td>0.163886</td>
-      <td>0.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+
+    |    |   Decile |   Max Prob |   Min Prob |   Converted Count |   Un Converted Count |   Total Leads |   Conversion Rate |   Converted % |   Un Converted % |   ks_stats |
+    |----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------|
+    |  9 |        1 |  0.99826   | 0.910258   |               257 |                   14 |           271 |       18.3571     |    0.250243   |       0.00834327 |      24.19 |
+    |  8 |        2 |  0.909066  | 0.781567   |               224 |                   46 |           270 |        4.86957    |    0.218111   |       0.0274136  |      43.26 |
+    |  7 |        3 |  0.780757  | 0.564123   |               182 |                   89 |           271 |        2.04494    |    0.177215   |       0.0530393  |      55.68 |
+    |  6 |        4 |  0.563613  | 0.380673   |               118 |                  152 |           270 |        0.776316   |    0.114898   |       0.090584   |      58.11 |
+    |  5 |        5 |  0.380229  | 0.251101   |               113 |                  157 |           270 |        0.719745   |    0.110029   |       0.0935638  |      59.76 |
+    |  4 |        6 |  0.250676  | 0.149579   |                64 |                  207 |           271 |        0.309179   |    0.0623174  |       0.123361   |      53.65 |
+    |  3 |        7 |  0.149564  | 0.113845   |                37 |                  233 |           270 |        0.158798   |    0.0360273  |       0.138856   |      43.37 |
+    |  2 |        8 |  0.113644  | 0.0693867  |                22 |                  249 |           271 |        0.0883534  |    0.0214216  |       0.148391   |      30.67 |
+    |  1 |        9 |  0.0693778 | 0.0292784  |                 8 |                  256 |           264 |        0.03125    |    0.00778968 |       0.152563   |      16.19 |
+    |  0 |       10 |  0.0292669 | 0.00223149 |                 2 |                  275 |           277 |        0.00727273 |    0.00194742 |       0.163886   |       0    |
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+
 
 - Max KS Statistic is 59.76 for 5th decile
 - This model discriminates between Converted and Non-converted leads well since KS Statistic in 4th decile (58.11) is greater than 40%. Hence, this is a reasonable good model.
@@ -8065,171 +5737,23 @@ df1
 
 ```python
 df1['Cum Conversion %'] = np.round(((df1['Converted Count'] / df1['Converted Count'].sum()).cumsum()), 4) * 100
-df1
+tab(df1)
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Decile</th>
-      <th>Max Prob</th>
-      <th>Min Prob</th>
-      <th>Converted Count</th>
-      <th>Un Converted Count</th>
-      <th>Total Leads</th>
-      <th>Conversion Rate</th>
-      <th>Converted %</th>
-      <th>Un Converted %</th>
-      <th>ks_stats</th>
-      <th>Cum Conversion %</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>9</th>
-      <td>1</td>
-      <td>0.998260</td>
-      <td>0.910258</td>
-      <td>257</td>
-      <td>14</td>
-      <td>271</td>
-      <td>18.357143</td>
-      <td>0.250243</td>
-      <td>0.008343</td>
-      <td>24.19</td>
-      <td>25.02</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>2</td>
-      <td>0.909066</td>
-      <td>0.781567</td>
-      <td>224</td>
-      <td>46</td>
-      <td>270</td>
-      <td>4.869565</td>
-      <td>0.218111</td>
-      <td>0.027414</td>
-      <td>43.26</td>
-      <td>46.84</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>3</td>
-      <td>0.780757</td>
-      <td>0.564123</td>
-      <td>182</td>
-      <td>89</td>
-      <td>271</td>
-      <td>2.044944</td>
-      <td>0.177215</td>
-      <td>0.053039</td>
-      <td>55.68</td>
-      <td>64.56</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>4</td>
-      <td>0.563613</td>
-      <td>0.380673</td>
-      <td>118</td>
-      <td>152</td>
-      <td>270</td>
-      <td>0.776316</td>
-      <td>0.114898</td>
-      <td>0.090584</td>
-      <td>58.11</td>
-      <td>76.05</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5</td>
-      <td>0.380229</td>
-      <td>0.251101</td>
-      <td>113</td>
-      <td>157</td>
-      <td>270</td>
-      <td>0.719745</td>
-      <td>0.110029</td>
-      <td>0.093564</td>
-      <td>59.76</td>
-      <td>87.05</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6</td>
-      <td>0.250676</td>
-      <td>0.149579</td>
-      <td>64</td>
-      <td>207</td>
-      <td>271</td>
-      <td>0.309179</td>
-      <td>0.062317</td>
-      <td>0.123361</td>
-      <td>53.65</td>
-      <td>93.28</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>7</td>
-      <td>0.149564</td>
-      <td>0.113845</td>
-      <td>37</td>
-      <td>233</td>
-      <td>270</td>
-      <td>0.158798</td>
-      <td>0.036027</td>
-      <td>0.138856</td>
-      <td>43.37</td>
-      <td>96.88</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>8</td>
-      <td>0.113644</td>
-      <td>0.069387</td>
-      <td>22</td>
-      <td>249</td>
-      <td>271</td>
-      <td>0.088353</td>
-      <td>0.021422</td>
-      <td>0.148391</td>
-      <td>30.67</td>
-      <td>99.03</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>9</td>
-      <td>0.069378</td>
-      <td>0.029278</td>
-      <td>8</td>
-      <td>256</td>
-      <td>264</td>
-      <td>0.031250</td>
-      <td>0.007790</td>
-      <td>0.152563</td>
-      <td>16.19</td>
-      <td>99.81</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>10</td>
-      <td>0.029267</td>
-      <td>0.002231</td>
-      <td>2</td>
-      <td>275</td>
-      <td>277</td>
-      <td>0.007273</td>
-      <td>0.001947</td>
-      <td>0.163886</td>
-      <td>0.00</td>
-      <td>100.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+
+    |    |   Decile |   Max Prob |   Min Prob |   Converted Count |   Un Converted Count |   Total Leads |   Conversion Rate |   Converted % |   Un Converted % |   ks_stats |   Cum Conversion % |
+    |----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------|
+    |  9 |        1 |  0.99826   | 0.910258   |               257 |                   14 |           271 |       18.3571     |    0.250243   |       0.00834327 |      24.19 |              25.02 |
+    |  8 |        2 |  0.909066  | 0.781567   |               224 |                   46 |           270 |        4.86957    |    0.218111   |       0.0274136  |      43.26 |              46.84 |
+    |  7 |        3 |  0.780757  | 0.564123   |               182 |                   89 |           271 |        2.04494    |    0.177215   |       0.0530393  |      55.68 |              64.56 |
+    |  6 |        4 |  0.563613  | 0.380673   |               118 |                  152 |           270 |        0.776316   |    0.114898   |       0.090584   |      58.11 |              76.05 |
+    |  5 |        5 |  0.380229  | 0.251101   |               113 |                  157 |           270 |        0.719745   |    0.110029   |       0.0935638  |      59.76 |              87.05 |
+    |  4 |        6 |  0.250676  | 0.149579   |                64 |                  207 |           271 |        0.309179   |    0.0623174  |       0.123361   |      53.65 |              93.28 |
+    |  3 |        7 |  0.149564  | 0.113845   |                37 |                  233 |           270 |        0.158798   |    0.0360273  |       0.138856   |      43.37 |              96.88 |
+    |  2 |        8 |  0.113644  | 0.0693867  |                22 |                  249 |           271 |        0.0883534  |    0.0214216  |       0.148391   |      30.67 |              99.03 |
+    |  1 |        9 |  0.0693778 | 0.0292784  |                 8 |                  256 |           264 |        0.03125    |    0.00778968 |       0.152563   |      16.19 |              99.81 |
+    |  0 |       10 |  0.0292669 | 0.00223149 |                 2 |                  275 |           277 |        0.00727273 |    0.00194742 |       0.163886   |       0    |             100    |
+    +----+----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+
 
 ```python
 df1['Base %'] = np.arange(10,110,10)
@@ -8237,185 +5761,23 @@ df1 = df1.set_index('Decile')
 ```
 
 ```python
-df1
+tab(df1)
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Max Prob</th>
-      <th>Min Prob</th>
-      <th>Converted Count</th>
-      <th>Un Converted Count</th>
-      <th>Total Leads</th>
-      <th>Conversion Rate</th>
-      <th>Converted %</th>
-      <th>Un Converted %</th>
-      <th>ks_stats</th>
-      <th>Cum Conversion %</th>
-      <th>Base %</th>
-    </tr>
-    <tr>
-      <th>Decile</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>0.998260</td>
-      <td>0.910258</td>
-      <td>257</td>
-      <td>14</td>
-      <td>271</td>
-      <td>18.357143</td>
-      <td>0.250243</td>
-      <td>0.008343</td>
-      <td>24.19</td>
-      <td>25.02</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.909066</td>
-      <td>0.781567</td>
-      <td>224</td>
-      <td>46</td>
-      <td>270</td>
-      <td>4.869565</td>
-      <td>0.218111</td>
-      <td>0.027414</td>
-      <td>43.26</td>
-      <td>46.84</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.780757</td>
-      <td>0.564123</td>
-      <td>182</td>
-      <td>89</td>
-      <td>271</td>
-      <td>2.044944</td>
-      <td>0.177215</td>
-      <td>0.053039</td>
-      <td>55.68</td>
-      <td>64.56</td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.563613</td>
-      <td>0.380673</td>
-      <td>118</td>
-      <td>152</td>
-      <td>270</td>
-      <td>0.776316</td>
-      <td>0.114898</td>
-      <td>0.090584</td>
-      <td>58.11</td>
-      <td>76.05</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.380229</td>
-      <td>0.251101</td>
-      <td>113</td>
-      <td>157</td>
-      <td>270</td>
-      <td>0.719745</td>
-      <td>0.110029</td>
-      <td>0.093564</td>
-      <td>59.76</td>
-      <td>87.05</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0.250676</td>
-      <td>0.149579</td>
-      <td>64</td>
-      <td>207</td>
-      <td>271</td>
-      <td>0.309179</td>
-      <td>0.062317</td>
-      <td>0.123361</td>
-      <td>53.65</td>
-      <td>93.28</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0.149564</td>
-      <td>0.113845</td>
-      <td>37</td>
-      <td>233</td>
-      <td>270</td>
-      <td>0.158798</td>
-      <td>0.036027</td>
-      <td>0.138856</td>
-      <td>43.37</td>
-      <td>96.88</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0.113644</td>
-      <td>0.069387</td>
-      <td>22</td>
-      <td>249</td>
-      <td>271</td>
-      <td>0.088353</td>
-      <td>0.021422</td>
-      <td>0.148391</td>
-      <td>30.67</td>
-      <td>99.03</td>
-      <td>80</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0.069378</td>
-      <td>0.029278</td>
-      <td>8</td>
-      <td>256</td>
-      <td>264</td>
-      <td>0.031250</td>
-      <td>0.007790</td>
-      <td>0.152563</td>
-      <td>16.19</td>
-      <td>99.81</td>
-      <td>90</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0.029267</td>
-      <td>0.002231</td>
-      <td>2</td>
-      <td>275</td>
-      <td>277</td>
-      <td>0.007273</td>
-      <td>0.001947</td>
-      <td>0.163886</td>
-      <td>0.00</td>
-      <td>100.00</td>
-      <td>100</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------+
+    |   Decile |   Max Prob |   Min Prob |   Converted Count |   Un Converted Count |   Total Leads |   Conversion Rate |   Converted % |   Un Converted % |   ks_stats |   Cum Conversion % |   Base % |
+    |----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------|
+    |        1 |  0.99826   | 0.910258   |               257 |                   14 |           271 |       18.3571     |    0.250243   |       0.00834327 |      24.19 |              25.02 |       10 |
+    |        2 |  0.909066  | 0.781567   |               224 |                   46 |           270 |        4.86957    |    0.218111   |       0.0274136  |      43.26 |              46.84 |       20 |
+    |        3 |  0.780757  | 0.564123   |               182 |                   89 |           271 |        2.04494    |    0.177215   |       0.0530393  |      55.68 |              64.56 |       30 |
+    |        4 |  0.563613  | 0.380673   |               118 |                  152 |           270 |        0.776316   |    0.114898   |       0.090584   |      58.11 |              76.05 |       40 |
+    |        5 |  0.380229  | 0.251101   |               113 |                  157 |           270 |        0.719745   |    0.110029   |       0.0935638  |      59.76 |              87.05 |       50 |
+    |        6 |  0.250676  | 0.149579   |                64 |                  207 |           271 |        0.309179   |    0.0623174  |       0.123361   |      53.65 |              93.28 |       60 |
+    |        7 |  0.149564  | 0.113845   |                37 |                  233 |           270 |        0.158798   |    0.0360273  |       0.138856   |      43.37 |              96.88 |       70 |
+    |        8 |  0.113644  | 0.0693867  |                22 |                  249 |           271 |        0.0883534  |    0.0214216  |       0.148391   |      30.67 |              99.03 |       80 |
+    |        9 |  0.0693778 | 0.0292784  |                 8 |                  256 |           264 |        0.03125    |    0.00778968 |       0.152563   |      16.19 |              99.81 |       90 |
+    |       10 |  0.0292669 | 0.00223149 |                 2 |                  275 |           277 |        0.00727273 |    0.00194742 |       0.163886   |       0    |             100    |      100 |
+    +----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------+
 
 ```python
 ### Gain chart
@@ -8428,7 +5790,7 @@ plt.ylabel('Cummulative Conversion %')
 plt.legend(('Our Model','Random Model'));
 ```
 
-![svg](output_299_0.svg)
+![png](output_299_0.png)
 
 - Instead of pursuing leads randomly, pursuing the top 40% leads scored by the model would let the sales team reach 80% of leads likely to convert.
 
@@ -8437,209 +5799,23 @@ plt.legend(('Our Model','Random Model'));
 ```python
 df1['Lift'] = df1['Cum Conversion %'] / df1['Base %']
 df1['Baseline'] = 1
-df1
+tab(df1)
 ```
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Max Prob</th>
-      <th>Min Prob</th>
-      <th>Converted Count</th>
-      <th>Un Converted Count</th>
-      <th>Total Leads</th>
-      <th>Conversion Rate</th>
-      <th>Converted %</th>
-      <th>Un Converted %</th>
-      <th>ks_stats</th>
-      <th>Cum Conversion %</th>
-      <th>Base %</th>
-      <th>Lift</th>
-      <th>Baseline</th>
-    </tr>
-    <tr>
-      <th>Decile</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>0.998260</td>
-      <td>0.910258</td>
-      <td>257</td>
-      <td>14</td>
-      <td>271</td>
-      <td>18.357143</td>
-      <td>0.250243</td>
-      <td>0.008343</td>
-      <td>24.19</td>
-      <td>25.02</td>
-      <td>10</td>
-      <td>2.502000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.909066</td>
-      <td>0.781567</td>
-      <td>224</td>
-      <td>46</td>
-      <td>270</td>
-      <td>4.869565</td>
-      <td>0.218111</td>
-      <td>0.027414</td>
-      <td>43.26</td>
-      <td>46.84</td>
-      <td>20</td>
-      <td>2.342000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.780757</td>
-      <td>0.564123</td>
-      <td>182</td>
-      <td>89</td>
-      <td>271</td>
-      <td>2.044944</td>
-      <td>0.177215</td>
-      <td>0.053039</td>
-      <td>55.68</td>
-      <td>64.56</td>
-      <td>30</td>
-      <td>2.152000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.563613</td>
-      <td>0.380673</td>
-      <td>118</td>
-      <td>152</td>
-      <td>270</td>
-      <td>0.776316</td>
-      <td>0.114898</td>
-      <td>0.090584</td>
-      <td>58.11</td>
-      <td>76.05</td>
-      <td>40</td>
-      <td>1.901250</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.380229</td>
-      <td>0.251101</td>
-      <td>113</td>
-      <td>157</td>
-      <td>270</td>
-      <td>0.719745</td>
-      <td>0.110029</td>
-      <td>0.093564</td>
-      <td>59.76</td>
-      <td>87.05</td>
-      <td>50</td>
-      <td>1.741000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0.250676</td>
-      <td>0.149579</td>
-      <td>64</td>
-      <td>207</td>
-      <td>271</td>
-      <td>0.309179</td>
-      <td>0.062317</td>
-      <td>0.123361</td>
-      <td>53.65</td>
-      <td>93.28</td>
-      <td>60</td>
-      <td>1.554667</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0.149564</td>
-      <td>0.113845</td>
-      <td>37</td>
-      <td>233</td>
-      <td>270</td>
-      <td>0.158798</td>
-      <td>0.036027</td>
-      <td>0.138856</td>
-      <td>43.37</td>
-      <td>96.88</td>
-      <td>70</td>
-      <td>1.384000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0.113644</td>
-      <td>0.069387</td>
-      <td>22</td>
-      <td>249</td>
-      <td>271</td>
-      <td>0.088353</td>
-      <td>0.021422</td>
-      <td>0.148391</td>
-      <td>30.67</td>
-      <td>99.03</td>
-      <td>80</td>
-      <td>1.237875</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0.069378</td>
-      <td>0.029278</td>
-      <td>8</td>
-      <td>256</td>
-      <td>264</td>
-      <td>0.031250</td>
-      <td>0.007790</td>
-      <td>0.152563</td>
-      <td>16.19</td>
-      <td>99.81</td>
-      <td>90</td>
-      <td>1.109000</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0.029267</td>
-      <td>0.002231</td>
-      <td>2</td>
-      <td>275</td>
-      <td>277</td>
-      <td>0.007273</td>
-      <td>0.001947</td>
-      <td>0.163886</td>
-      <td>0.00</td>
-      <td>100.00</td>
-      <td>100</td>
-      <td>1.000000</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    +----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------+---------+------------+
+    |   Decile |   Max Prob |   Min Prob |   Converted Count |   Un Converted Count |   Total Leads |   Conversion Rate |   Converted % |   Un Converted % |   ks_stats |   Cum Conversion % |   Base % |    Lift |   Baseline |
+    |----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------+---------+------------|
+    |        1 |  0.99826   | 0.910258   |               257 |                   14 |           271 |       18.3571     |    0.250243   |       0.00834327 |      24.19 |              25.02 |       10 | 2.502   |          1 |
+    |        2 |  0.909066  | 0.781567   |               224 |                   46 |           270 |        4.86957    |    0.218111   |       0.0274136  |      43.26 |              46.84 |       20 | 2.342   |          1 |
+    |        3 |  0.780757  | 0.564123   |               182 |                   89 |           271 |        2.04494    |    0.177215   |       0.0530393  |      55.68 |              64.56 |       30 | 2.152   |          1 |
+    |        4 |  0.563613  | 0.380673   |               118 |                  152 |           270 |        0.776316   |    0.114898   |       0.090584   |      58.11 |              76.05 |       40 | 1.90125 |          1 |
+    |        5 |  0.380229  | 0.251101   |               113 |                  157 |           270 |        0.719745   |    0.110029   |       0.0935638  |      59.76 |              87.05 |       50 | 1.741   |          1 |
+    |        6 |  0.250676  | 0.149579   |                64 |                  207 |           271 |        0.309179   |    0.0623174  |       0.123361   |      53.65 |              93.28 |       60 | 1.55467 |          1 |
+    |        7 |  0.149564  | 0.113845   |                37 |                  233 |           270 |        0.158798   |    0.0360273  |       0.138856   |      43.37 |              96.88 |       70 | 1.384   |          1 |
+    |        8 |  0.113644  | 0.0693867  |                22 |                  249 |           271 |        0.0883534  |    0.0214216  |       0.148391   |      30.67 |              99.03 |       80 | 1.23788 |          1 |
+    |        9 |  0.0693778 | 0.0292784  |                 8 |                  256 |           264 |        0.03125    |    0.00778968 |       0.152563   |      16.19 |              99.81 |       90 | 1.109   |          1 |
+    |       10 |  0.0292669 | 0.00223149 |                 2 |                  275 |           277 |        0.00727273 |    0.00194742 |       0.163886   |       0    |             100    |      100 | 1       |          1 |
+    +----------+------------+------------+-------------------+----------------------+---------------+-------------------+---------------+------------------+------------+--------------------+----------+---------+------------+
 
 ```python
 # Lift chart
@@ -8652,7 +5828,7 @@ plt.ylabel('Lift')
 plt.legend(('Our Model','Random Model'));
 ```
 
-![svg](output_303_0.svg)
+![png](output_303_0.png)
 
 - The model outperforms a random model by alteast 2 times in identifying the top 40% potentially convertible leads.
 - As opposed to 10% conversions from 10% leads pursued randomly, pursuing the top 10% leads scored by this model would lead to 24% conversions.
