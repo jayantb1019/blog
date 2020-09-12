@@ -43,12 +43,12 @@ where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
 Interpreting Top 6 features affecting Conversion Probability :
 
-- A lead from `Welingak Website` has 5.4 times higher odds of conversion than those from `Google`.
-- Leads through `Reference` have 3 times higher odds of conversion than those from `Google`.
-- Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
-- Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
-- Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
-- Leads with `Unknown Occupation` have 1.27 times lesser odds of conversion compared to those from `Businessman`.
+- A lead from `Welingak Website` has 5.4 times higher log odds of conversion than those from `Google`.
+- Leads through `Reference` have 3 times higher log odds of conversion than those from `Google`.
+- Leads from `Working Professional` have 2.38 times higher log odds of conversion than those from `Businessman`.
+- Leads with `SMS Sent` have 1.8 times higher log odds of conversion than those with no SMS sent.
+- Leads with `Do Not Email` have 1.5 times lesser log odds of conversion compared to leads who would like email updates.
+- Leads with `Unknown Occupation` have 1.27 times lesser log odds of conversion compared to those from `Businessman`.
 
 Lead Scores :
 
@@ -5845,12 +5845,12 @@ where `Total Time Spent on Website` is standardized to $\mu=0,\sigma=1$
 
 Interpreting Top 6 features affecting Conversion Probability :
 
-- A lead from `Welingak Website` has 5.4 times higher odds of conversion than those from `Google`.
-- Leads through `Reference` have 3 times higher odds of conversion than those from `Google`.
-- Leads from `Working Professional` have 2.38 times higher odds of conversion than those from `Businessman`.
-- Leads with `SMS Sent` have 1.8 times higher odds of conversion than those with no SMS sent.
-- Leads with `Do Not Email` have 1.5 times lesser odds of conversion compared to leads who would like email updates.
-- Leads with `Unknown Occupation` have 1.27 times lesser odds of conversion compared to those from `Businessman`.
+- A lead from `Welingak Website` has 5.4 times higher log odds of conversion than those from `Google`.
+- Leads through `Reference` have 3 times higher log odds of conversion than those from `Google`.
+- Leads from `Working Professional` have 2.38 times higher log odds of conversion than those from `Businessman`.
+- Leads with `SMS Sent` have 1.8 times higher log odds of conversion than those with no SMS sent.
+- Leads with `Do Not Email` have 1.5 times lesser log odds of conversion compared to leads who would like email updates.
+- Leads with `Unknown Occupation` have 1.27 times lesser log odds of conversion compared to those from `Businessman`.
 
 Lead Scores :
 
